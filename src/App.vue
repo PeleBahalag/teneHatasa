@@ -76,7 +76,7 @@ import BasicProtocols from './components/BasicProtocols.vue';
 .home-btn{
   height: 15vmin;
   width: 15vmin;
-  position: absolute;
+  position: fixed;
   bottom: 2%;
   right:50%;
   transform: translateX(50%);
