@@ -6,6 +6,7 @@
     </div>
     <home-screen id="home-screen" v-if="currentPage === 'home'" @move-page="navigate"></home-screen>
     <about-page v-if="currentPage === 'about'"></about-page>
+    <basic-protocols v-if="currentPage === 'basic'"></basic-protocols>
     <img v-if="currentPage !== 'home'" src="./assets/navs/home.png" class="home-btn" @click="navigate('home')"/>
   </div>
 </template>
@@ -13,8 +14,9 @@
 <script>
   import HomeScreen from './components/HomeScreen.vue'
 import AboutPage from './components/AboutPage.vue';
+import BasicProtocols from './components/BasicProtocols.vue';
   export default{
-    components:{"home-screen":HomeScreen,"about-page":AboutPage},
+    components:{"home-screen" : HomeScreen , "about-page" : AboutPage , "basic-protocols" : BasicProtocols},
     data() {
       return{
         currentPage:'home',
@@ -58,8 +60,8 @@ import AboutPage from './components/AboutPage.vue';
 }
 
 .pele{
-  top:4%;
-  right:3%;
+  top:2%;
+  right:2%;
   height:50%;
   width:20%;
 }
@@ -68,14 +70,14 @@ import AboutPage from './components/AboutPage.vue';
   height:50%;
   width:18%;
   top:4%;
-  left:2%;
+  left:0.5%;
 }
 
 .home-btn{
   height: 15vmin;
   width: 15vmin;
   position: absolute;
-  bottom: 5%;
+  bottom: 2%;
   right:50%;
   transform: translateX(50%);
 }
@@ -86,19 +88,25 @@ import AboutPage from './components/AboutPage.vue';
   .pele{
     width:8%;
     right:1%;
-    height:60%;
+    height:67%;
   }
 
   .chail{
     left:1%;
-    width: 7.5%;
-    top:15%;
+    width: 7%;
+    height: 80%;
+    top:10%;
   }
 
   .banner{
     background-image: url('assets/mejuraf-big.png');
     height:14vh;
     background-size: 100% 100%;
+  }
+
+  .home-btn{
+    height: 8vmin;
+    width: 8vmin;
   }
 }
 </style>
