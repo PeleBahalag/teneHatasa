@@ -12,7 +12,7 @@
                     <div class="d-block w-100 item-card">
                         <h1>4</h1>
                         <h2>אודות</h2>
-                        <img src="../assets/navs/about.png"/>
+                        <img src="../assets/navs/about.png" class="icons"/>
                         <p>קרדיטים, משאבים ועוד.</p>
                         <button class="btn btn-primary" style="background-color:#316b30 ; border-color:#2e632d" @click="toAbout">התחל</button>
                     </div>
@@ -21,7 +21,7 @@
                     <div class="d-block w-100 item-card">
                         <h1>3</h1>
                         <h2>הטסה מתקדמת</h2>
-                        <img src="../assets/navs/advanced.png"/>
+                        <img src="../assets/navs/advanced.png" class="icons"/>
                         <p>מעגל אינדיאני, איבוד אוריאנטציה ומצב SPOFFING</p>
                         <button class="btn btn-primary" style="background-color:#dab87c ; border-color:#d2b279" @click="toAdvanced">התחל</button>
                     </div>
@@ -30,7 +30,7 @@
                     <div class="d-block w-100 item-card">
                         <h1>2</h1>
                         <h2>איבוד RF וGPS</h2>
-                        <img src="../assets/navs/lost.png"/>
+                        <img src="../assets/navs/lost.png" class="icons"/>
                         <p>זיהוי והכרזת תקלות, תרגולת מצב ATTI ואובדן RF</p>
                         <button class="btn btn-primary" style="background-color:#f1ad15 ; border-color:#dea016" @click="toLost">התחל</button>
                     </div>
@@ -39,7 +39,7 @@
                     <div class="d-block w-100 item-card">
                         <h1>1</h1>
                         <h2>תרגולות הטסה בסיסיות</h2>
-                        <img src="../assets/navs/basicProtocols.png"/>
+                        <img src="../assets/navs/basicProtocols.png" class="icons"/>
                         <p>המראה, נחיתה, קיפול מרחב.</p>
                         <button class="btn btn-primary" style="background-color:#43a342 ; border-color:#419c40" @click="toBasic">התחל</button>
                     </div>
@@ -162,8 +162,18 @@ export default {
     transform: translateY(50%);
 }
 
+h1{
+    font-size: smaller;
+}
 
+h2{
+    font-size: smaller;
+}
 
+.icons{
+    height: 19vh;
+    width: 19vh;
+}
 
 /* Remove the line break on larger screens */
 @media (min-width: 768px) {
