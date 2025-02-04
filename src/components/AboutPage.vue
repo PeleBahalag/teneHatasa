@@ -17,7 +17,7 @@
     width:100%;
     top:80%;
     text-align: center;
-    font-family: 'migdal';
+    font-family: 'title-font';
     font-size: 8vmin;
     right:50%;
     transform: translateX(50%);
@@ -33,13 +33,13 @@ export default {
 
 <style scoped>
 @font-face {
-  font-family: 'asakim';
-  src: url('../assets/fonts/asakim.woff') format("woff");
+  font-family: 'text-font';
+  src: url('../assets/fonts/Fredoka-Regular.woff2') format("woff2");
 }
 
 @font-face {
-  font-family: 'migdal';
-  src: url('../assets/fonts/migdal.woff') format("woff");
+  font-family: 'title-font';
+  src: url('../assets/fonts/rubik.woff2') format("woff2");
 }
 
 #about-page{
@@ -60,7 +60,7 @@ export default {
     width:100%;
     top:6%;
     text-align: center;
-    font-family: 'migdal';
+    font-family: 'title-font';
     font-size: 15vmin;
     right:50%;
     transform: translateX(50%);
@@ -68,7 +68,7 @@ export default {
 }
 
 .about-text{
-    font-family:'asakim';
+    font-family:'text-font';
     width: 100%;
     position:absolute;
     top:20%;

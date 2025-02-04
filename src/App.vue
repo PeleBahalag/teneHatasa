@@ -23,7 +23,6 @@ import AboutPage from './components/AboutPage.vue';
     methods : {
       navigate(pageName){
         this.currentPage = pageName;
-        console.log('Page changed to: ' + this.currentPage)
       }
     }
   }

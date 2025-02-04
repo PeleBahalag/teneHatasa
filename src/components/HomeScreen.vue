@@ -78,13 +78,13 @@ export default {
 
 <style>
 @font-face {
-  font-family: 'asakim';
-  src: url('../assets/fonts/asakim.woff') format("woff");
+  font-family: 'text-font';
+  src: url('../assets/fonts/Fredoka-Regular.woff2') format("woff2");
 }
 
 @font-face {
-  font-family: 'migdal';
-  src: url('../assets/fonts/migdal.woff') format("woff");
+  font-family: 'title-font';
+  src: url('../assets/fonts/rubik.woff2') format("woff2");
 }
 
 #home-screen{
@@ -97,6 +97,7 @@ export default {
     min-height: 100vh;
   min-width: 100vw;
   overflow: hidden;
+  font-family: 'text-font';
   
 }
 
@@ -105,7 +106,7 @@ export default {
     width:100%;
     top:4%;
     text-align: center;
-    font-family: 'migdal';
+    font-family: 'title-font';
     font-size: 10vmin;
     right:50%;
     transform: translateX(50%);
@@ -119,7 +120,7 @@ export default {
 
 
 .message{
-    font-family: asakim;
+    font-family: text-font;
     width:90%;
     font-size: 6vmin;
     position: absolute;
