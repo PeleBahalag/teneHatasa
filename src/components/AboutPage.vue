@@ -13,7 +13,7 @@
         רת"ח: רס"ן שחר עמנואל <br>
         אישור הדרכתי: רס"ן ליאורה אמסלם
         </p>
-        <h2 style="position: fixed;
+        <h2 style="position: absolute;
     width:100%;
     top:80%;
     text-align: center;
