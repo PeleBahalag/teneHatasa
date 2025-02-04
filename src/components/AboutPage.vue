@@ -15,7 +15,7 @@
         </p>
         <h2 style="position: absolute;
     width:100%;
-    top:80%;
+    top:85%;
     text-align: center;
     font-family: 'title-font';
     font-size: 8vmin;
