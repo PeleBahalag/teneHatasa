@@ -7,16 +7,18 @@
     <home-screen id="home-screen" v-if="currentPage === 'home'" @move-page="navigate"></home-screen>
     <about-page v-if="currentPage === 'about'"></about-page>
     <basic-protocols v-if="currentPage === 'basic'"></basic-protocols>
+    <advanced-flight v-if="currentPage === 'advanced'"></advanced-flight>
     <img v-if="currentPage !== 'home'" src="./assets/navs/home.png" class="home-btn" @click="navigate('home')"/>
   </div>
 </template>
 
 <script>
   import HomeScreen from './components/HomeScreen.vue'
-import AboutPage from './components/AboutPage.vue';
-import BasicProtocols from './components/BasicProtocols.vue';
+  import AboutPage from './components/AboutPage.vue';
+  import BasicProtocols from './components/BasicProtocols.vue';
+  import AdvancedFlight from './components/AdvancedFlight.vue';
   export default{
-    components:{"home-screen" : HomeScreen , "about-page" : AboutPage , "basic-protocols" : BasicProtocols},
+    components:{"home-screen" : HomeScreen , "about-page" : AboutPage , "basic-protocols" : BasicProtocols , 'advanced-flight' : AdvancedFlight},
     data() {
       return{
         currentPage:'home',
@@ -43,6 +45,7 @@ import BasicProtocols from './components/BasicProtocols.vue';
   min-height: 100vh;
   min-width: 100vw;
   direction: rtl;
+  user-select: none;
 }
 
 .banner{

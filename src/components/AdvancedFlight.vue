@@ -1,5 +1,5 @@
 <template>
-    <div class="basic-protocols">
+    <div id="advanced-flight">
         <h2 class="title">הטסה בסיסית</h2>
         <h3 class="subtitle">{{subtitles[subject]}}</h3>
         <div class="navs">
@@ -7,14 +7,12 @@
                 <p class="teasers tprev">{{subtitles[subject-1] }}</p>
                 <img src="../assets/navs/prev.png" class="nav-item prev" @click="prev" />
             </div>
-            <div v-if="subject < subjectsAmount -1">
+            <div v-if="subject < subjectsAmount - 1 ">
                 <p class="teasers tnext">{{subtitles[subject+1] }}</p>
                 <img src="../assets/navs/next.png" class="nav-item next" @click="next"  />
-            </div>   
-        </div>
+            </div> 
 
-
-        <div class="subject" id="takeoff-remote" v-if="subject === 0">
+            <div class="subject" id="takeoff-remote" v-if="subject === 0">
             <div class="accordion accordion-flush">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
@@ -73,12 +71,14 @@
             </div>
         </div>
 
+        
+
         <div class="subject" id="takeoff-drone" v-if="subject === 1">
             <div class="accordion accordion-flush">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        הדלקת הרחפן
+                        נושא 1
                     </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -89,69 +89,23 @@
                     </div>
                     </div>
                 </div>
-
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        חיבור להבים
+                        נושא 2
                     </button>
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa earum alias amet placeat eligendi sapiente quidem porro veritatis suscipit, necessitatibus quasi deserunt veniam nesciunt est nemo laborum dolorum ea eos.</div>
                     </div>
                 </div>
-
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        מצלמה
+                        נושא 3
                     </button>
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores perferendis voluptates velit est, explicabo debitis dolore odit error rem vitae inventore dicta eaque odio accusantium quidem eius officia, provident aliquam!</div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                        סוללה
-                    </button>
-                    </h2>
-                    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores perferendis voluptates velit est, explicabo debitis dolore odit error rem vitae inventore dicta eaque odio accusantium quidem eius officia, provident aliquam!</div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                        חימוש מנועים + בדיקת רעש
-                    </button>
-                    </h2>
-                    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores perferendis voluptates velit est, explicabo debitis dolore odit error rem vitae inventore dicta eaque odio accusantium quidem eius officia, provident aliquam!</div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                        פול סטיק והכנה לבדיקות
-                    </button>
-                    </h2>
-                    <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores perferendis voluptates velit est, explicabo debitis dolore odit error rem vitae inventore dicta eaque odio accusantium quidem eius officia, provident aliquam!</div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-                        בדיקות מחייבות
-                    </button>
-                    </h2>
-                    <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores perferendis voluptates velit est, explicabo debitis dolore odit error rem vitae inventore dicta eaque odio accusantium quidem eius officia, provident aliquam!</div>
                     </div>
                 </div>
@@ -159,46 +113,6 @@
         </div>
 
         <div v-if="subject === 2" class="subject" id="landing">
-            <div class="accordion accordion-flush">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        5 הממים
-                    </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">כאן יופיעו כל הטקסט, סרטונים ודברים אחרים שרלוונטיים לסעיף
-                        <br>
-                        אפשר שכמה כרטיסיות יהיו פתוחות בו זמנית ואם הן חורגות מהמסך הן יהפכו לגלילה ויהיה כיף!! <br>
-                        אני אפילו אוסיף עוד שורה של טקסט כדי שיהיה אפשר לראות את הגלילה <br>
-                        כמו שאתם רואים יש חלוקה גם לתתי נושאים ואז לסעיפים קטנים יותר, וככה הכל מסודר ולא עמוס מידי
-                    </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        תפעול לקיפול
-                    </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa earum alias amet placeat eligendi sapiente quidem porro veritatis suscipit, necessitatibus quasi deserunt veniam nesciunt est nemo laborum dolorum ea eos.</div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        תפעול להחלפת סוללה
-                    </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores perferendis voluptates velit est, explicabo debitis dolore odit error rem vitae inventore dicta eaque odio accusantium quidem eius officia, provident aliquam!</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="fold" class="subjext" v-if="subject === 3">
             <div class="accordion accordion-flush">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
@@ -237,23 +151,23 @@
                 </div>
             </div>
         </div>
-
+    </div>
     </div>
 </template>
 
 <script>
 export default {
-    name:'basic-protocols',
+    name:'advanced-flight',
     data(){
         return{
-            subtitles : ['המראה - שלט' , 'המראה - רחפן' , 'נחיתה' , 'קיפול  מרחב'],
             subject: 0,
-            subjectsAmount:4,
+            subtitles : ['מעגל אינדיאני', 'איבוד אוריאנטצייה' , 'מצב SPOFFING'],
+            subjectsAmount: 3,
         }
     },
     methods : {
         next(){
-            if(this.subject < this.subjectsAmount -1 ) {
+            if(this.subject < this.subjectsAmount - 1) {
                 this.subject++;
             }
             console.log('next was clicked it is now' + this.subject)
@@ -264,7 +178,8 @@ export default {
             }
             console.log('prev was clicked it is now' + this.subject)
         }
-    },
+    }
+        
     
 }
 </script>
@@ -280,7 +195,7 @@ export default {
   src: url('../assets/fonts/rubik.woff2') format("woff2");
 }
 
-.basic-protocols{
+#advanced-flight{
     position: absolute;
     top:0%;
     right:0%;
@@ -372,6 +287,7 @@ export default {
 .accordion-body{
     background-color: #1d1d1b;
     color:white;
+    user-select: all !important;
 }
 
 .accordion-button{
@@ -421,6 +337,6 @@ export default {
     .tprev{
         right:3%;
     }
+    
 }
-
 </style>
