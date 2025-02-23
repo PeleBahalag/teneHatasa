@@ -1,6 +1,6 @@
 <template>
     <div id="advanced-flight">
-        <h2 class="title">הטסה בסיסית</h2>
+        <h2 class="title">הטסה מתקדמת</h2>
         <h3 class="subtitle">{{subtitles[subject]}}</h3>
         <div class="navs">
             <div v-if="subject > 0" >
@@ -71,7 +71,6 @@
             </div>
         </div>
 
-        
 
         <div class="subject" id="takeoff-drone" v-if="subject === 1">
             <div class="accordion accordion-flush">
@@ -272,9 +271,8 @@ export default {
 }
 
 .accordion{
-    position: absolute;
     height: 70%;
-    top:17% !important;
+    top:10% !important;
     width: 100%;
     overflow-y: scroll;
     overflow-x:hidden ;

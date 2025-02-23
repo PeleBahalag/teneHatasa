@@ -19,14 +19,15 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        הדלקה וסוללה
+                        הוצאה מהפק"ל
                     </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">כאן יופיעו כל הטקסט, סרטונים ודברים אחרים שרלוונטיים לסעיף
-                        <br>
-                        אפשר שכמה כרטיסיות יהיו פתוחות בו זמנית ואם הן חורגות מהמסך הן יהפכו לגלילה ויהיה כיף!! <br>
-                        אני אפילו אוסיף עוד שורה של טקסט כדי שיהיה אפשר לראות את הגלילה
+                    <div class="accordion-body">יש לבחור נקודת פריקה מתאימה המאפשרת הגנה על הכוח, הוצאת הרכיבים השונים של הרחפן כגון סוללה, רחפן ושלט בצורה בטיחותית עם שמירה על הציוד. חשוב מאוד שבכל העת בתפעול הציוד לשמור על הרכיבים השונים ולהחזיר דברים שלא בשימוש כמו מגן גימבל לפק"ל ולסגור אותו למנוע כניסת לחות, חול ואבק.
+                        <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
+                            <source src="https://www.dropbox.com/scl/fi/3b5xq172ja8ozhrhmd8jx/.mp4?rlkey=6diqthzqehec93z9pv205fzpt&st=021xin8k&raw=1" type="video/mp4">
+                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
+                        </video>
                     </div>
                     </div>
                 </div>
@@ -57,7 +58,13 @@
                     </button>
                     </h2>
                     <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores perferendis voluptates velit est, explicabo debitis dolore odit error rem vitae inventore dicta eaque odio accusantium quidem eius officia, provident aliquam!</div>
+                    <div class="accordion-body">
+                        יש לבחור נקודת פריקה מתאימה המאפשרת הגנה על הכוח, הוצאת הרכיבים השונים של הרחפן כגון סוללה, רחפן ושלט בצורה בטיחותית עם שמירה על הציוד. חשוב מאוד שבכל העת בתפעול הציוד לשמור על הרכיבים השונים ולהחזיר דברים שלא בשימוש כמו מגן גימבל לפק"ל ולסגור אותו למנוע כניסת לחות, חול ואבק.
+                        <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
+                            <source src="https://www.dropbox.com/scl/fi/2da0zx6eir5dj3x9wpivl/.mp4?rlkey=zklgbtnsn5nhulsn7hmkagj93&st=ggfafhn5&raw=1" type="video/mp4">
+                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
+                        </video>
+                    </div>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -85,7 +92,9 @@
                     <div class="accordion-body">כאן יופיעו כל הטקסט, סרטונים ודברים אחרים שרלוונטיים לסעיף
                         <br>
                         אפשר שכמה כרטיסיות יהיו פתוחות בו זמנית ואם הן חורגות מהמסך הן יהפכו לגלילה ויהיה כיף!! <br>
-                        אני אפילו אוסיף עוד שורה של טקסט כדי שיהיה אפשר לראות את הגלילה
+                        אני אפילו אוסיף עוד שורה של טקסט כדי שיהיה אפשר לראות את הגלילה <br>
+                        ועכשיו ננסה לשים סרטון: <br>
+                        
                     </div>
                     </div>
                 </div>
@@ -242,6 +251,8 @@
 </template>
 
 <script>
+import { onMounted, ref } from "vue";
+
 export default {
     name:'basic-protocols',
     data(){
@@ -263,8 +274,24 @@ export default {
                 this.subject--;
             }
             console.log('prev was clicked it is now' + this.subject)
-        }
+        },
+        handleFullscreen() {
+            const isFullscreen =
+                document.fullscreenElement ||
+                document.webkitFullscreenElement ||
+                document.mozFullScreenElement ||
+                document.msFullscreenElement;
+
+            if (isFullscreen && screen.orientation?.lock) {
+                screen.orientation.lock("landscape").catch(() => {
+                console.warn("Orientation lock not supported");
+                });
+            } else if (screen.orientation?.unlock) {
+                screen.orientation.unlock();
+            }
+        },
     },
+    
     
 }
 </script>
@@ -389,6 +416,19 @@ export default {
   border-color: #ffcc00 !important; /* Optional: Change border color */
 }
 
+.vid-div{
+    padding:56.25% 0 0 0;
+    position:relative;
+}
+
+.video-in-acc{
+    height: 20vh;
+    width: 80vw;
+    padding: 3%;
+    margin: auto;
+    object-fit: cover;
+}
+
 @media (min-width: 768px) {
     .title{
         font-size: 8vmin;
@@ -420,6 +460,11 @@ export default {
     
     .tprev{
         right:3%;
+    }
+
+    .video-in-acc{
+        height: 55vh;
+        width: 40vw;
     }
 }
 
