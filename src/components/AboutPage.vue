@@ -2,18 +2,7 @@
     <div id="about-page">
         <h2 class="title">אודות</h2>
         <p class="about-text"> 
-            כאן יהיו כל מיני קרדיטים וכו'
-            <!-- מקווים שאתם נהנים ונעזרים בפקלון! <br>
-        הפרויקט התאפשר בזכות שיתוף פעולה נרחב בין החיל ומדור פל"א של בסיס סיירים. <br>
-                 <br>
-        מציג : [] יובל פרנסז <br>
-        תכנות וגרפיקה: רב"ט מיכל אוסטרובסקי <br>
-        צילום: טוראי שרה אמבה <br>
-        עריכת וידיאו: טוראי ניר מגדל <br>
-        גרפיקה: רב"ט ליבי לאון <br>
-        רמ"דית: סמ"ר תמר שנהב <br>
-        רת"ח: רס"ן שחר עמנואל <br>
-        אישור הדרכתי: רס"ן ליאורה אמסלם -->
+            
         </p>
         <h2 style="position: absolute;
     width:100%;
@@ -76,5 +65,15 @@ export default {
     top:20%;
     padding: 3%;
     font-size: 6vmin;
+}
+
+/*this represents mobile landscape view */
+@media (min-width: 480px) and (max-width: 934px){
+     
+  .title{
+    font-size: 9vmin !important;
+    position: absolute;
+    top:2%;
+  }
 }
 </style>

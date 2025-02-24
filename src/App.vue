@@ -88,6 +88,7 @@
 /*media breakpoints to make site compatible for portrait & landscape */
 
 @media screen and (min-width: 768px){
+  
   .pele{
     width:8%;
     right:1%;
@@ -110,6 +111,17 @@
   .home-btn{
     height: 8vmin;
     width: 8vmin;
+  }
+}
+
+/*this represents mobile landscape view */
+@media (min-width: 480px) and (max-width: 934px){
+  .pele{
+    width: 7%;
+    height: 80%;
+  }
+  .chail{
+    height: 83%;
   }
 }
 </style>

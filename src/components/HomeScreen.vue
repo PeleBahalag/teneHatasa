@@ -58,19 +58,19 @@
 
 <script>
 export default {
-    name:'home-screen',
-    methods:{
-        toAbout(){
-            this.$emit("move-page","about");
+    name : 'home-screen',
+    methods : {
+        toAbout() {
+            this.$emit("move-page" , "about");
         },
-        toAdvanced(){
-            this.$emit("move-page","advanced")
+        toAdvanced() {
+            this.$emit("move-page" , "advanced");
         },
-        toLost(){
-            this.$emit("move-page","lost")
+        toLost() {
+            this.$emit("move-page" , "lost");
         },
-        toBasic(){
-            this.$emit("move-page","basic")
+        toBasic() {
+            this.$emit("move-page" , "basic");
         }
     }
 };
@@ -202,6 +202,36 @@ h2{
     top:15%;
   }
   
+}
+/*this represents mobile landscape view */
+@media (min-width: 480px) and (max-width: 934px){
+    .mobile-break::after {
+    content: ""; /* Removes the break on desktops */
   }
+  h1{
+    font-size: 6vmin !important;
+  }
+  h2{
+    font-size: 4vmin !important;
+  }
+  .carousel-inner{
+    height: 60vh;
+  }
+  .item-card{
+    height:60vh;
+  }
+  .title{
+    font-size: 9vmin !important;
+  }
+}
+/*tablet portrait view */
+@media (min-width: 768px) and (max-width: 1023px){
+
+}
+
+/*tablet landscape view */
+@media (min-width: 1024px) and (max-width: 1279px){
+
+}
 
 </style>
