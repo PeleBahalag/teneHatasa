@@ -12,7 +12,7 @@
                 <img src="../assets/navs/next.png" class="nav-item next" @click="next"  />
             </div>   
         </div>
-
+        
 
         <div class="subject" id="takeoff-remote" v-if="subject === 0">
             <div class="accordion accordion-flush">
@@ -23,7 +23,8 @@
                     </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">יש לבחור נקודת פריקה מתאימה המאפשרת הגנה על הכוח, הוצאת הרכיבים השונים של הרחפן כגון סוללה, רחפן ושלט בצורה בטיחותית עם שמירה על הציוד. חשוב מאוד שבכל העת בתפעול הציוד לשמור על הרכיבים השונים ולהחזיר דברים שלא בשימוש כמו מגן גימבל לפק"ל ולסגור אותו למנוע כניסת לחות, חול ואבק.
+                    <div class="accordion-body">
+                        {{ basic.takeFromBag }}
                         <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
                             <source src="https://www.dropbox.com/scl/fi/3b5xq172ja8ozhrhmd8jx/.mp4?rlkey=6diqthzqehec93z9pv205fzpt&st=021xin8k&raw=1" type="video/mp4">
                             הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
@@ -59,7 +60,7 @@
                     </h2>
                     <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        יש לבחור נקודת פריקה מתאימה המאפשרת הגנה על הכוח, הוצאת הרכיבים השונים של הרחפן כגון סוללה, רחפן ושלט בצורה בטיחותית עם שמירה על הציוד. חשוב מאוד שבכל העת בתפעול הציוד לשמור על הרכיבים השונים ולהחזיר דברים שלא בשימוש כמו מגן גימבל לפק"ל ולסגור אותו למנוע כניסת לחות, חול ואבק.
+                        {{basic.compassCaliberate}}
                         <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
                             <source src="https://www.dropbox.com/scl/fi/2da0zx6eir5dj3x9wpivl/.mp4?rlkey=zklgbtnsn5nhulsn7hmkagj93&st=ggfafhn5&raw=1" type="video/mp4">
                             הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
@@ -74,7 +75,16 @@
                     </button>
                     </h2>
                     <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores perferendis voluptates velit est, explicabo debitis dolore odit error rem vitae inventore dicta eaque odio accusantium quidem eius officia, provident aliquam!</div>
+                    <div class="accordion-body">
+                        {{ basic.fiveMemimPerlude }}
+                        <ol>
+                            <li v-for="(line , index) in basic.fiveMemimList" :key="index">{{ line }}</li>
+                        </ol>
+                        <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
+                            <source src="https://www.dropbox.com/scl/fi/5jrvdr4wea2r64x1ebd7a/.mp4?rlkey=e8s8xc4q6pxtri2wpz15qkvb7&st=j20m555c&raw=1" type="video/mp4">
+                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
+                        </video>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -128,7 +138,13 @@
                     </button>
                     </h2>
                     <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores perferendis voluptates velit est, explicabo debitis dolore odit error rem vitae inventore dicta eaque odio accusantium quidem eius officia, provident aliquam!</div>
+                    <div class="accordion-body">
+                        {{ basic.battery }}
+                        <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
+                            <source src="https://www.dropbox.com/scl/fi/n6d9q9cpeeiwe5482pnx1/.mp4?rlkey=md9you92mzbfg6k4mjll5se7z&st=tqtcyhd9&raw=1" type="video/mp4">
+                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
+                        </video>
+                    </div>
                     </div>
                 </div>
 
@@ -252,6 +268,7 @@
 
 <script>
 import { onMounted, ref } from "vue";
+import basic from "/src/assets/basic.json"
 
 export default {
     name:'basic-protocols',
@@ -260,6 +277,7 @@ export default {
             subtitles : ['המראה - שלט' , 'המראה - רחפן' , 'נחיתה' , 'קיפול  מרחב'],
             subject: 0,
             subjectsAmount:4,
+            basic
         }
     },
     methods : {
@@ -267,13 +285,11 @@ export default {
             if(this.subject < this.subjectsAmount -1 ) {
                 this.subject++;
             }
-            console.log('next was clicked it is now' + this.subject)
         },
         prev(){
             if(this.subject > 0) {
                 this.subject--;
             }
-            console.log('prev was clicked it is now' + this.subject)
         },
         handleFullscreen() {
             const isFullscreen =
