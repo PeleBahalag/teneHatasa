@@ -122,6 +122,7 @@
   }
   .chail{
     height: 83%;
+    width: 7%;
   }
 }
 </style>

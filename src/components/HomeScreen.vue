@@ -209,19 +209,32 @@ h2{
     content: ""; /* Removes the break on desktops */
   }
   h1{
-    font-size: 6vmin !important;
+    font-size: 5vmin !important;
   }
   h2{
     font-size: 4vmin !important;
   }
   .carousel-inner{
-    height: 60vh;
+    height: 50vh;
   }
   .item-card{
-    height:60vh;
+    height:50vh;
   }
   .title{
     font-size: 9vmin !important;
+  }
+  p{
+    font-size: 3vmin !important;
+  }
+  .message{
+    display: none;
+  }
+  .carousel{
+    top: 25%;
+  }
+
+  .icons{
+    display: none;
   }
 }
 /*tablet portrait view */
