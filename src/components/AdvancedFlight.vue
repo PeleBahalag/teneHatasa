@@ -11,8 +11,9 @@
                 <p class="teasers tnext">{{subtitles[subject+1] }}</p>
                 <img src="../assets/navs/next.png" class="nav-item next" @click="next"  />
             </div> 
+        </div>
 
-            <div class="subject" id="takeoff-remote" v-if="subject === 0">
+        <div class="subject" id="takeoff-remote" v-if="subject === 0">
             <div class="accordion accordion-flush">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
@@ -151,7 +152,6 @@
             </div>
         </div>
     </div>
-    </div>
 </template>
 
 <script>
@@ -271,8 +271,9 @@ export default {
 }
 
 .accordion{
+    position: absolute;
+    top: 17% !important;
     height: 70%;
-    top:10% !important;
     width: 100%;
     overflow-y: scroll;
     overflow-x:hidden ;

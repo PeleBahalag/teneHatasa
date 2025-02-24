@@ -223,7 +223,7 @@
             </div>
         </div>
 
-        <div id="fold" class="subjext" v-if="subject === 3">
+        <div id="fold" class="subject" v-if="subject === 3">
             <div class="accordion accordion-flush">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
@@ -438,8 +438,8 @@ export default {
 }
 
 .video-in-acc{
-    height: 20vh;
-    width: 80vw;
+    height: 23vh;
+    width: 75vw;
     padding: 3%;
     margin: auto;
     object-fit: cover;
