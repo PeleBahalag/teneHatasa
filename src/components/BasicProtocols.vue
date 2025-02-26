@@ -24,7 +24,8 @@
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        {{ basic.takeFromBag }}
+                        <p>{{ basic.takeFromBag }}</p>
+                        
                         <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
                             <source src="https://www.dropbox.com/scl/fi/3b5xq172ja8ozhrhmd8jx/.mp4?rlkey=6diqthzqehec93z9pv205fzpt&st=021xin8k&raw=1" type="video/mp4">
                             הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
@@ -60,7 +61,7 @@
                     </h2>
                     <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        {{basic.compassCaliberate}}
+                        <p>{{basic.compassCaliberate}}</p>
                         <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
                             <source src="https://www.dropbox.com/scl/fi/2da0zx6eir5dj3x9wpivl/.mp4?rlkey=zklgbtnsn5nhulsn7hmkagj93&st=ggfafhn5&raw=1" type="video/mp4">
                             הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
@@ -139,7 +140,7 @@
                     </h2>
                     <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        {{ basic.battery }}
+                        <p>{{ basic.battery }}</p>
                         <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
                             <source src="https://www.dropbox.com/scl/fi/n6d9q9cpeeiwe5482pnx1/.mp4?rlkey=md9you92mzbfg6k4mjll5se7z&st=tqtcyhd9&raw=1" type="video/mp4">
                             הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר

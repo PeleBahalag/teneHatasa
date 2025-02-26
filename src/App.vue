@@ -90,7 +90,7 @@
 @media screen and (min-width: 768px){
   
   .pele{
-    width:8%;
+    width:7%;
     right:1%;
     height:67%;
   }
