@@ -1,25 +1,13 @@
 <template>
     <div class="basic-protocols">
         <h2 class="title">הטסה בסיסית</h2>
-        <h3 class="subtitle">{{subtitles[subject]}}</h3>
-        <div class="navs">
-            <div v-if="subject > 0" >
-                <p class="teasers tprev">{{subtitles[subject-1] }}</p>
-                <img src="../assets/navs/prev.png" class="nav-item prev" @click="prev" />
-            </div>
-            <div v-if="subject < subjectsAmount -1">
-                <p class="teasers tnext">{{subtitles[subject+1] }}</p>
-                <img src="../assets/navs/next.png" class="nav-item next" @click="next"  />
-            </div>   
-        </div>
-        
 
-        <div class="subject" id="takeoff-remote" v-if="subject === 0">
+        <div class="subject">
             <div class="accordion accordion-flush">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        הוצאה מהפק"ל
+                        הוצאת רחפן מהפק"ל
                     </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -27,7 +15,7 @@
                         <p>{{ basic.takeFromBag }}</p>
                         
                         <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
-                            <source src="https://www.dropbox.com/scl/fi/3b5xq172ja8ozhrhmd8jx/.mp4?rlkey=6diqthzqehec93z9pv205fzpt&st=021xin8k&raw=1" type="video/mp4">
+                            <source src="https://tinyurl.com/2zpbepsm" type="video/mp4">
                             הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
                         </video>
                     </div>
@@ -36,21 +24,33 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        הגדרץ גובה מנקה וחזרה הביתה
+                        בדיקת מדחפים
                     </button>
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa earum alias amet placeat eligendi sapiente quidem porro veritatis suscipit, necessitatibus quasi deserunt veniam nesciunt est nemo laborum dolorum ea eos.</div>
+                    <div class="accordion-body">
+                        <p>{{ basic.madchefim }}</p>
+                        <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
+                            <source src="https://tinyurl.com/9ktfvy7t" type="video/mp4">
+                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
+                        </video>
+                    </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        תקשורת RF וRTH
+                        בדיקת הסוללה וחיבורי סוללה
                     </button>
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores perferendis voluptates velit est, explicabo debitis dolore odit error rem vitae inventore dicta eaque odio accusantium quidem eius officia, provident aliquam!</div>
+                    <div class="accordion-body">
+                        <p>{{ basic.battery }}</p>
+                        <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
+                            <source src="https://tinyurl.com/3ubatzdh" type="video/mp4">
+                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
+                        </video>
+                    </div>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -63,7 +63,7 @@
                     <div class="accordion-body">
                         <p>{{basic.compassCaliberate}}</p>
                         <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
-                            <source src="https://www.dropbox.com/scl/fi/2da0zx6eir5dj3x9wpivl/.mp4?rlkey=zklgbtnsn5nhulsn7hmkagj93&st=ggfafhn5&raw=1" type="video/mp4">
+                            <source src="https://tinyurl.com/yprja8zd" type="video/mp4">
                             הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
                         </video>
                     </div>
@@ -72,195 +72,90 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                        5 הממים, כיוון מצלמה ואנטנות
+                        כיול סטיקים
                     </button>
                     </h2>
                     <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        {{ basic.fiveMemimPerlude }}
-                        <ol>
-                            <li v-for="(line , index) in basic.fiveMemimList" :key="index">{{ line }}</li>
-                        </ol>
+                        <p>{{ basic.sticks }}</p>
                         <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
-                            <source src="https://www.dropbox.com/scl/fi/5jrvdr4wea2r64x1ebd7a/.mp4?rlkey=e8s8xc4q6pxtri2wpz15qkvb7&st=j20m555c&raw=1" type="video/mp4">
+                            <source src="https://tinyurl.com/3yxa3h54" type="video/mp4">
                             הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
                         </video>
                     </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="subject" id="takeoff-drone" v-if="subject === 1">
-            <div class="accordion accordion-flush">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        הדלקת הרחפן
-                    </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">כאן יופיעו כל הטקסט, סרטונים ודברים אחרים שרלוונטיים לסעיף
-                        <br>
-                        אפשר שכמה כרטיסיות יהיו פתוחות בו זמנית ואם הן חורגות מהמסך הן יהפכו לגלילה ויהיה כיף!! <br>
-                        אני אפילו אוסיף עוד שורה של טקסט כדי שיהיה אפשר לראות את הגלילה <br>
-                        ועכשיו ננסה לשים סרטון: <br>
-                        
-                    </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        חיבור להבים
-                    </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa earum alias amet placeat eligendi sapiente quidem porro veritatis suscipit, necessitatibus quasi deserunt veniam nesciunt est nemo laborum dolorum ea eos.</div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        מצלמה
-                    </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores perferendis voluptates velit est, explicabo debitis dolore odit error rem vitae inventore dicta eaque odio accusantium quidem eius officia, provident aliquam!</div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                        סוללה
-                    </button>
-                    </h2>
-                    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <p>{{ basic.battery }}</p>
-                        <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
-                            <source src="https://www.dropbox.com/scl/fi/n6d9q9cpeeiwe5482pnx1/.mp4?rlkey=md9you92mzbfg6k4mjll5se7z&st=tqtcyhd9&raw=1" type="video/mp4">
-                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
-                        </video>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                        חימוש מנועים + בדיקת רעש
-                    </button>
-                    </h2>
-                    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores perferendis voluptates velit est, explicabo debitis dolore odit error rem vitae inventore dicta eaque odio accusantium quidem eius officia, provident aliquam!</div>
-                    </div>
-                </div>
-
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                        פול סטיק והכנה לבדיקות
+                        חמשת הממים
                     </button>
                     </h2>
                     <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores perferendis voluptates velit est, explicabo debitis dolore odit error rem vitae inventore dicta eaque odio accusantium quidem eius officia, provident aliquam!</div>
+                    <div class="accordion-body">
+                        <p>{{ basic.fiveMemimPerlude }}</p>
+                        <ol>
+                            <li v-for="(item , index) in basic.fiveMemimList" :key="index">{{ item }}</li>
+                        </ol>
+                        <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
+                            <source src="https://tinyurl.com/2bzkfhxf" type="video/mp4">
+                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
+                        </video>
+                    </div>
                     </div>
                 </div>
 
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-                        בדיקות מחייבות
+                        תרגולת המראה
                     </button>
                     </h2>
                     <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores perferendis voluptates velit est, explicabo debitis dolore odit error rem vitae inventore dicta eaque odio accusantium quidem eius officia, provident aliquam!</div>
+                    <div class="accordion-body">
+                        <p>{{ basic.takeoff }}</p>
+                        <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
+                            <source src="https://tinyurl.com/d42w54xx" type="video/mp4">
+                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
+                        </video>
+                    </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div v-if="subject === 2" class="subject" id="landing">
-            <div class="accordion accordion-flush">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        5 הממים
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                        נחיתה
                     </button>
                     </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">כאן יופיעו כל הטקסט, סרטונים ודברים אחרים שרלוונטיים לסעיף
-                        <br>
-                        אפשר שכמה כרטיסיות יהיו פתוחות בו זמנית ואם הן חורגות מהמסך הן יהפכו לגלילה ויהיה כיף!! <br>
-                        אני אפילו אוסיף עוד שורה של טקסט כדי שיהיה אפשר לראות את הגלילה <br>
-                        כמו שאתם רואים יש חלוקה גם לתתי נושאים ואז לסעיפים קטנים יותר, וככה הכל מסודר ולא עמוס מידי
+                    <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        {{ basic.landing }}
+                        <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
+                            <source src="https://tinyurl.com/2s45td83" type="video/mp4">
+                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
+                        </video>
                     </div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        תפעול לקיפול
-                    </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa earum alias amet placeat eligendi sapiente quidem porro veritatis suscipit, necessitatibus quasi deserunt veniam nesciunt est nemo laborum dolorum ea eos.</div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        תפעול להחלפת סוללה
-                    </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores perferendis voluptates velit est, explicabo debitis dolore odit error rem vitae inventore dicta eaque odio accusantium quidem eius officia, provident aliquam!</div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div id="fold" class="subject" v-if="subject === 3">
-            <div class="accordion accordion-flush">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        נושא 1
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                        קיפול רחפן
                     </button>
                     </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">כאן יופיעו כל הטקסט, סרטונים ודברים אחרים שרלוונטיים לסעיף
-                        <br>
-                        אפשר שכמה כרטיסיות יהיו פתוחות בו זמנית ואם הן חורגות מהמסך הן יהפכו לגלילה ויהיה כיף!! <br>
-                        אני אפילו אוסיף עוד שורה של טקסט כדי שיהיה אפשר לראות את הגלילה <br>
-                        כמו שאתם רואים יש חלוקה גם לתתי נושאים ואז לסעיפים קטנים יותר, וככה הכל מסודר ולא עמוס מידי
+                    <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>{{ basic.fold }}</p>
+                        <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
+                            <source src="https://tinyurl.com/mr2vejvt" type="video/mp4">
+                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
+                        </video>
                     </div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        נושא 2
-                    </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa earum alias amet placeat eligendi sapiente quidem porro veritatis suscipit, necessitatibus quasi deserunt veniam nesciunt est nemo laborum dolorum ea eos.</div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        נושא 3
-                    </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores perferendis voluptates velit est, explicabo debitis dolore odit error rem vitae inventore dicta eaque odio accusantium quidem eius officia, provident aliquam!</div>
-                    </div>
-                </div>
+                
             </div>
         </div>
 
@@ -275,23 +170,11 @@ export default {
     name:'basic-protocols',
     data(){
         return{
-            subtitles : ['המראה - שלט' , 'המראה - רחפן' , 'נחיתה' , 'קיפול  מרחב'],
-            subject: 0,
-            subjectsAmount:4,
             basic
         }
     },
     methods : {
-        next(){
-            if(this.subject < this.subjectsAmount -1 ) {
-                this.subject++;
-            }
-        },
-        prev(){
-            if(this.subject > 0) {
-                this.subject--;
-            }
-        },
+
         handleFullscreen() {
             const isFullscreen =
                 document.fullscreenElement ||
@@ -352,10 +235,10 @@ export default {
 .title{
     position: fixed;
     width:100%;
-    top:6%;
+    top:7%;
     text-align: center;
     font-family: 'title-font';
-    font-size: 10vmin;
+    font-size: 11vmin;
     right:51%;
     transform: translateX(50%);
     text-shadow: 3px 2px 1px rgba(211, 211, 211, 0.8);
