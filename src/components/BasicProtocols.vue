@@ -30,10 +30,14 @@
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                         <p>{{ basic.madchefim }}</p>
-                        <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
-                            <source src="https://tinyurl.com/9ktfvy7t" type="video/mp4">
-                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
-                        </video>
+                        <div class="video-in-acc">
+                            <iframe
+                                src="https://player.vimeo.com/video/1057904350?h=3de53339c4"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
                     </div>
                     </div>
                 </div>
