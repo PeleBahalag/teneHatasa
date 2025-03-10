@@ -12,7 +12,7 @@
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p>{{ basic.takeFromBag }}</p>
+                        <p class="texts">{{ basic.takeFromBag }}</p>
                         <div class="video-in-acc">
                             <iframe
                                 src="https://player.vimeo.com/video/1057904310?h=19ad4cbaff"
@@ -32,7 +32,7 @@
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p>{{ basic.madchefim }}</p>
+                        <p class="texts">{{ basic.madchefim }}</p>
                         <div class="video-in-acc">
                             <iframe
                                 src="https://player.vimeo.com/video/1057904350?h=3de53339c4"
@@ -52,7 +52,7 @@
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p>{{ basic.battery }}</p>
+                        <p class="texts">{{ basic.battery }}</p>
                         <div class="video-in-acc">
                             <iframe
                                 src="https://player.vimeo.com/video/1057904395?h=135bef5ce8"
@@ -72,7 +72,7 @@
                     </h2>
                     <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p>{{basic.compassCaliberate}}</p>
+                        <p class="texts">{{basic.compassCaliberate}}</p>
                         <div class="video-in-acc">
                             <iframe
                                 src="https://player.vimeo.com/video/1057904439?h=5ec7c2282b"
@@ -92,7 +92,7 @@
                     </h2>
                     <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p>{{ basic.sticks }}</p>
+                        <p class="texts">{{ basic.sticks }}</p>
                         <div class="video-in-acc">
                             <iframe
                                 src="https://player.vimeo.com/video/1057904546?h=94fbb770d7"
@@ -112,7 +112,7 @@
                     </h2>
                     <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p>{{ basic.fiveMemimPerlude }}</p>
+                        <p class="texts">{{ basic.fiveMemimPerlude }}</p>
                         <ol>
                             <li v-for="(item , index) in basic.fiveMemimList" :key="index">{{ item }}</li>
                         </ol>
@@ -136,7 +136,7 @@
                     </h2>
                     <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p>{{ basic.takeoff }}</p>
+                        <p class="texts">{{ basic.takeoff }}</p>
                         <div class="video-in-acc">
                             <iframe
                                 src="https://player.vimeo.com/video/1057904588?h=b4bae8cb33"
@@ -157,7 +157,7 @@
                     </h2>
                     <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        {{ basic.landing }}
+                        <p class="texts">{{ basic.landing }}</p>
                         <div class="video-in-acc">
                             <iframe
                                 src="https://player.vimeo.com/video/1057904635?h=4bcff48898"
@@ -178,7 +178,7 @@
                     </h2>
                     <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p>{{ basic.fold }}</p>
+                        <p class="texts">{{ basic.fold }}</p>
                         <div class="video-in-acc">
                             <iframe
                                 src="https://player.vimeo.com/video/1057904684?h=a01ef39abf"
@@ -405,6 +405,24 @@ export default {
     .video-in-acc{
         height: 55vh;
         width: 40vw;
+    }
+    .texts{
+        width: 60%;
+        margin: auto;
+        font-size: 3vmin;
+    }
+    li{
+        font-size: 3vmin;
+    }
+    .accordion-button{
+        font-size: 3vmin;
+    }
+    .accordion{
+        top:14.2% !important;
+    }
+    ol{
+        width: 60%;
+        margin: auto;
     }
 }
 

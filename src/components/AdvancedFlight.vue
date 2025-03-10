@@ -1,8 +1,14 @@
 <template>
     <div id="advanced-flight">
         <h2 class="title">הטסה מתקדמת</h2>
-
-        <div class="subject">
+        <div class="switch-container">
+            <label class="switch">
+            <input type="checkbox" v-model="isGps" />
+            <span class="slider"></span>
+            </label>
+            <span style="margin: 3px;">{{ isGps ? 'GPS/VPS' : 'ATTI' }}</span>
+        </div>
+        <div class="subject" v-show="isGps">
             <div class="accordion accordion-flush">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
@@ -12,7 +18,7 @@
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p>{{ advanced.indianCircle }}</p>
+                        <p class="texts">{{ advanced.indianCircle }}</p>
                         <!-- <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
                             <source src="" type="video/mp4">
                             הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
@@ -28,7 +34,7 @@
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p>{{ advanced.square }}</p>
+                        <p class="texts">{{ advanced.square }}</p>
                         <!-- <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
                             <source src="" type="video/mp4">
                             הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
@@ -44,7 +50,7 @@
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p>{{ advanced.digitalEight }}</p>
+                        <p class="texts">{{ advanced.digitalEight }}</p>
                         <!-- <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
                             <source src="" type="video/mp4">
                             הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
@@ -60,7 +66,7 @@
                     </h2>
                     <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p>{{ advanced.disorientationPerlude }}</p>
+                        <p class="texts">{{ advanced.disorientationPerlude }}</p>
                         <ol>
                             <li v-for="(item , index) in advanced.disorientationList" :key="index">{{ item }}</li>
                         </ol>
@@ -71,6 +77,10 @@
                     </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="subject" v-show="!isGps">
+            <div class="accordion accordion-flush">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
@@ -79,7 +89,7 @@
                     </h2>
                     <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p>{{ advanced.attiFixed }}</p>
+                        <p class="texts">{{ advanced.attiFixed }}</p>
                         <!-- <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
                             <source src="" type="video/mp4">
                             הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
@@ -95,7 +105,7 @@
                     </h2>
                     <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p>{{ advanced.attiBallerina }}</p>
+                        <p class="texts">{{ advanced.attiBallerina }}</p>
                         <!-- <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
                             <source src="" type="video/mp4">
                             הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
@@ -111,7 +121,7 @@
                     </h2>
                     <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p>{{ advanced.attiCircle}}</p>
+                        <p class="texts">{{ advanced.attiCircle}}</p>
                         <!-- <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
                             <source src="" type="video/mp4">
                             הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
@@ -127,7 +137,7 @@
                     </h2>
                     <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p>{{ advanced.attiSquare}}</p>
+                        <p class="texts">{{ advanced.attiSquare}}</p>
                         <!-- <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
                             <source src="" type="video/mp4">
                             הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
@@ -143,7 +153,7 @@
                     </h2>
                     <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p>{{ advanced.attiEight }}</p>
+                        <p class="texts">{{ advanced.attiEight }}</p>
                         <!-- <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
                             <source src="" type="video/mp4">
                             הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
@@ -159,7 +169,7 @@
                     </h2>
                     <div id="flush-collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p>{{ advanced.attiDisorientationPerlude }}</p>
+                        <p class="texts">{{ advanced.attiDisorientationPerlude }}</p>
                         <ol>
                             <li v-for="(item , index) in advanced.attiDisorientationList" :key="index">{{ item }}</li>
                         </ol>
@@ -171,6 +181,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
 </template>
@@ -181,7 +192,8 @@ export default {
     name:'advanced-flight',
     data(){
         return{
-            advanced
+            advanced,
+            isGps : true
         }
     },
     methods : {
@@ -244,10 +256,10 @@ export default {
 .title{
     position: fixed;
     width:100%;
-    top:6%;
+    top:6.5%;
     text-align: center;
     font-family: 'title-font';
-    font-size: 10vmin;
+    font-size: 9vmin;
     right:51%;
     transform: translateX(50%);
     text-shadow: 3px 2px 1px rgba(211, 211, 211, 0.8);
@@ -339,9 +351,63 @@ export default {
     object-fit: cover;
 }
 
+.switch-container {
+  display: flex;
+  align-items: space-between;
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  top:12.5%;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 75px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 28px;
+  width:28px;
+  border-radius: 50%;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #4CAF50;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
 @media (min-width: 768px) {
     .title{
-        font-size: 8vmin;
+        font-size: 6vmin;
         top:1%
     }
 
@@ -371,6 +437,33 @@ export default {
     .tprev{
         right:3%;
     }
+    .texts{
+        width: 60%;
+        margin: auto;
+        font-size: 3vmin;
+    }
+    li{
+        font-size: 3vmin;
+    }
+    .accordion-button{
+        font-size: 3vmin;
+    }
+    .accordion{
+        top:14.2% !important;
+    }
+    .switch-container{
+        top:10% !important;
+    }
+    .video-in-acc{
+        height: 55vh;
+        width: 40vw;
+    }
+    ol{
+        width: 60%;
+        margin: auto;
+    }
     
 }
+
+
 </style>
