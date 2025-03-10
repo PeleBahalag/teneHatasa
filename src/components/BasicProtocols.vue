@@ -13,11 +13,14 @@
                     <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                         <p>{{ basic.takeFromBag }}</p>
-                        
-                        <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
-                            <source src="https://tinyurl.com/2zpbepsm" type="video/mp4">
-                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
-                        </video>
+                        <div class="video-in-acc">
+                            <iframe
+                                src="https://player.vimeo.com/video/1057904310?h=19ad4cbaff"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
                     </div>
                     </div>
                 </div>
@@ -50,10 +53,14 @@
                     <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                         <p>{{ basic.battery }}</p>
-                        <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
-                            <source src="https://tinyurl.com/3ubatzdh" type="video/mp4">
-                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
-                        </video>
+                        <div class="video-in-acc">
+                            <iframe
+                                src="https://player.vimeo.com/video/1057904395?h=135bef5ce8"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
                     </div>
                     </div>
                 </div>
@@ -66,10 +73,14 @@
                     <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                         <p>{{basic.compassCaliberate}}</p>
-                        <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
-                            <source src="https://tinyurl.com/yprja8zd" type="video/mp4">
-                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
-                        </video>
+                        <div class="video-in-acc">
+                            <iframe
+                                src="https://player.vimeo.com/video/1057904439?h=5ec7c2282b"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
                     </div>
                     </div>
                 </div>
@@ -82,10 +93,14 @@
                     <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                         <p>{{ basic.sticks }}</p>
-                        <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
-                            <source src="https://tinyurl.com/3yxa3h54" type="video/mp4">
-                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
-                        </video>
+                        <div class="video-in-acc">
+                            <iframe
+                                src="https://player.vimeo.com/video/1057904546?h=94fbb770d7"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
                     </div>
                     </div>
                 </div>
@@ -101,10 +116,14 @@
                         <ol>
                             <li v-for="(item , index) in basic.fiveMemimList" :key="index">{{ item }}</li>
                         </ol>
-                        <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
-                            <source src="https://tinyurl.com/2bzkfhxf" type="video/mp4">
-                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
-                        </video>
+                        <div class="video-in-acc">
+                            <iframe
+                                src="https://player.vimeo.com/video/1057904479?h=05da8ed3cb"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
                     </div>
                     </div>
                 </div>
@@ -118,10 +137,14 @@
                     <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                         <p>{{ basic.takeoff }}</p>
-                        <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
-                            <source src="https://tinyurl.com/d42w54xx" type="video/mp4">
-                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
-                        </video>
+                        <div class="video-in-acc">
+                            <iframe
+                                src="https://player.vimeo.com/video/1057904588?h=b4bae8cb33"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
                     </div>
                     </div>
                 </div>
@@ -135,10 +158,14 @@
                     <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                         {{ basic.landing }}
-                        <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
-                            <source src="https://tinyurl.com/2s45td83" type="video/mp4">
-                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
-                        </video>
+                        <div class="video-in-acc">
+                            <iframe
+                                src="https://player.vimeo.com/video/1057904635?h=4bcff48898"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
                     </div>
                     </div>
                 </div>
@@ -152,10 +179,14 @@
                     <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                         <p>{{ basic.fold }}</p>
-                        <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
-                            <source src="https://tinyurl.com/mr2vejvt" type="video/mp4">
-                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
-                        </video>
+                        <div class="video-in-acc">
+                            <iframe
+                                src="https://player.vimeo.com/video/1057904684?h=a01ef39abf"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
                     </div>
                     </div>
                 </div>
@@ -331,6 +362,11 @@ export default {
     padding: 3%;
     margin: auto;
     object-fit: cover;
+}
+
+.video-in-acc iframe {
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: 768px) {
