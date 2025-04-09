@@ -2,11 +2,12 @@
     <div id="advanced-flight">
         <h2 class="title">הטסה מתקדמת</h2>
         <div class="switch-container">
+            <span style="margin: 3px;">GPS/VPS</span>
             <label class="switch">
             <input type="checkbox" v-model="isGps" />
             <span class="slider"></span>
             </label>
-            <span style="margin: 3px;">{{ isGps ? 'GPS/VPS' : 'ATTI' }}</span>
+            <span style="margin: 3px;">ATTI</span>
         </div>
         <div class="subject" v-show="isGps">
             <div class="accordion accordion-flush">
@@ -356,7 +357,7 @@ export default {
   align-items: space-between;
   position: absolute;
   left:50%;
-  transform: translateX(-50%);
+  transform: translateX(-48%);
   top:12.5%;
 }
 

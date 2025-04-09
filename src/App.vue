@@ -97,7 +97,7 @@
 
   .chail{
     left:1%;
-    width: 7%;
+    width: 6%;
     height: 80%;
     top:10%;
   }
