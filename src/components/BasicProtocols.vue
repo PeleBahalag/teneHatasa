@@ -369,6 +369,18 @@ export default {
   height: 100%;
 }
 
+.accordion-button::after {
+  width: 1.25rem;  /* You can use vw, %, or clamp() for responsiveness */
+  height: 1.25rem;
+  background-size: contain;
+}
+
+.accordion-button::after {
+  width: 3vmin;  /* You can use vw, %, or clamp() for responsiveness */
+  height: 2vmin;
+  background-size: contain;
+}
+
 @media (min-width: 768px) {
     .title{
         font-size: 8vmin;

@@ -329,6 +329,12 @@ export default {
     
 }
 
+.accordion-button::after {
+  width: 1.25rem;  /* You can use vw, %, or clamp() for responsiveness */
+  height: 1.25rem;
+  background-size: contain;
+}
+
 .accordion-button:not(.collapsed){
     background-color: #f1ad15;
     border-color: #80673c;
@@ -354,7 +360,8 @@ export default {
 
 .switch-container {
   display: flex;
-  align-items: space-between;
+  align-items: center;
+  justify-content: space-between;
   position: absolute;
   left:50%;
   transform: translateX(-48%);
@@ -403,7 +410,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(26px);
+  transform: translateX(40px);
 }
 
 @media (min-width: 768px) {
