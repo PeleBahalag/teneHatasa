@@ -65,13 +65,13 @@
 .pele{
   top:2%;
   right:2%;
-  height:50%;
-  width:20%;
+  height:54%;
+  width:19%;
 }
 
 .chail{
   height:50%;
-  width:18%;
+  width:20%;
   top:4%;
   left:0.5%;
 }
@@ -90,9 +90,10 @@
 @media screen and (min-width: 768px){
   
   .pele{
-    width:7%;
+    width:6%;
     right:1%;
-    height:67%;
+    height:82%;
+    top:10%;
   }
 
   .chail{
@@ -117,7 +118,7 @@
 /*this represents mobile landscape view */
 @media (min-width: 480px) and (max-width: 934px){
   .pele{
-    width: 7%;
+    width: 6%;
     height: 80%;
   }
   .chail{
