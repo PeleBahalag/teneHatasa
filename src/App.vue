@@ -8,6 +8,8 @@
     <about-page v-if="currentPage === 'about'"></about-page>
     <basic-protocols v-if="currentPage === 'basic'"></basic-protocols>
     <advanced-flight v-if="currentPage === 'advanced'"></advanced-flight>
+    <com-loss v-if="currentPage === 'loss'"></com-loss>
+    <air-coordination v-if="currentPage === 'coordination'"></air-coordination>
     <img v-if="currentPage !== 'home'" src="./assets/navs/home.png" class="home-btn" @click="navigate('home')"/>
   </div>
 </template>
@@ -17,8 +19,10 @@
   import AboutPage from './components/AboutPage.vue';
   import BasicProtocols from './components/BasicProtocols.vue';
   import AdvancedFlight from './components/AdvancedFlight.vue';
+  import AirCoordination from './components/AirCoordination.vue';
+  import ComLoss from './components/ComLoss.vue';
   export default{
-    components:{"home-screen" : HomeScreen , "about-page" : AboutPage , "basic-protocols" : BasicProtocols , 'advanced-flight' : AdvancedFlight},
+    components:{"home-screen" : HomeScreen , "about-page" : AboutPage , "basic-protocols" : BasicProtocols , 'advanced-flight' : AdvancedFlight, ComLoss, AirCoordination},
     data() {
       return{
         currentPage:'home',
