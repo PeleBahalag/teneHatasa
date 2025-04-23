@@ -23,7 +23,7 @@
                         <h2>איבוד RC וGPS</h2>
                         <img src="../assets/navs/lost.png" class="icons"/>
                         <p>שיבושים, בעיות קליטה וחסימות</p>
-                        <button class="btn btn-primary" style="background-color:#316b30 ; border-color:#2e632d" @click="toLoss">התחל</button>
+                        <button class="btn btn-primary" style="background-color:#f1ad15 ; border-color:#d8a021" @click="toLoss">התחל</button>
                     </div>
                 </div>
                 <div class="carousel-item">
