@@ -22,7 +22,7 @@
                         <h1>4</h1>
                         <h2>איבוד RC וGPS</h2>
                         <img src="../assets/navs/lost.png" class="icons"/>
-                        <p>קרדיטים, משאבים ועוד.</p>
+                        <p>שיבושים, בעיות קליטה וחסימות</p>
                         <button class="btn btn-primary" style="background-color:#316b30 ; border-color:#2e632d" @click="toLoss">התחל</button>
                     </div>
                 </div>
@@ -31,7 +31,7 @@
                         <h1>3</h1>
                         <h2>סוגי הטסה ותרגולות</h2>
                         <img src="../assets/navs/advanced.png" class="icons"/>
-                        <p>מעגל אינדיאני, איבוד אוריאנטציה ומצב SPOFFING</p>
+                        <p>מרובע, שמינייה, מעגל אינדיאני ועוד</p>
                         <button class="btn btn-primary" style="background-color:#dab87c ; border-color:#d2b279" @click="toAdvanced">התחל</button>
                     </div>
                 </div>
@@ -39,18 +39,18 @@
                     <div class="d-block w-100 item-card">
                         <h1>2</h1>
                         <h2>תיאום אווירי</h2>
-                        <img src="../assets/navs/lost.png" class="icons"/>
-                        <p>זיהוי והכרזת תקלות, תרגולת מצב ATTI ואובדן RF</p>
-                        <button class="btn btn-primary" style="background-color:#f1ad15 ; border-color:#dea016" @click="toCoordination">התחל</button>
+                        <img src="../assets/navs/coordination.png" class="icons"/>
+                        <p>נוהל קרב, יב"א ומרכז סנכרון, תשל"ס</p>
+                        <button class="btn btn-primary" style="background-color:#1b4559 ; border-color:#123242" @click="toCoordination">התחל</button>
                     </div>
                 </div>
                 <div class="carousel-item active">
                     <div class="d-block w-100 item-card">
                         <h1>1</h1>
                         <h2>הכנות מקדימות</h2>
-                        <img src="../assets/navs/basicProtocols.png" class="icons"/>
+                        <img src="../assets/navs/preperation.png" class="icons"/>
                         <p>המראה, נחיתה, בדיקות.</p>
-                        <button class="btn btn-primary" style="background-color:#43a342 ; border-color:#419c40" @click="toBasic">התחל</button>
+                        <button class="btn btn-primary" style="background-color:#961f20 ; border-color:#6d1212" @click="toBasic">התחל</button>
                     </div>
                 </div>
     
