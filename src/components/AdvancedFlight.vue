@@ -14,7 +14,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        מעגל אינדיאני - GPS\VPS
+                        מרובע - GPS\VPS
                     </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -30,7 +30,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        מרובע - GPS/VPS
+                        שמינייה- GPS/VPS
                     </button>
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -46,7 +46,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        שמיניה דיגיטלית - GPS/VPS
+                        מעגל אינדיאני- GPS/VPS
                     </button>
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -62,7 +62,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                        איבוד אורינטאציה - GPS/VPS
+                        איבוד תקשורת - GPS/VPS
                     </button>
                     </h2>
                     <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -85,7 +85,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                        הטסה ידנית במצב ATTI - שמירת מיקום קבוע
+                        ATTI - שמירת מיקום קבוע
                     </button>
                     </h2>
                     <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -101,7 +101,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                        הטסה ידנית במצב ATTI - בלרינה
+                        ATTI - בלרינה
                     </button>
                     </h2>
                     <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -117,7 +117,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-                        הטסה ידנית במצב ATTI - מעגל אינדיאני
+                        ריבוע - ATTI
                     </button>
                     </h2>
                     <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -133,7 +133,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
-                        הטסה ידנית במצב ATTI - ריבוע
+                        שמינייה - ATTI
                     </button>
                     </h2>
                     <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -149,7 +149,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
-                        הטסה ידנית במצב ATTI - שמיניה דיגיטלית
+                        מעגל אינדיאני - ATTI
                     </button>
                     </h2>
                     <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -165,7 +165,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
-                        הטסה ידנית במצב ATTI – איבוד אורינטאציה
+                        ATTI – איבוד אורינטאציה
                     </button>
                     </h2>
                     <div id="flush-collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">

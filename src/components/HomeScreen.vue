@@ -75,8 +75,8 @@ export default {
         toAdvanced() {
             this.$emit("move-page" , "advanced");
         },
-        toLost() {
-            this.$emit("move-page" , "lost");
+        toLoss() {
+            this.$emit("move-page" , "loss");
         },
         toBasic() {
             this.$emit("move-page" , "basic");
