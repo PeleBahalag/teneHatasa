@@ -7,12 +7,15 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        בדיקות מחייבות
+                        בד"ח
                     </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p class="texts">{{ basic.takeFromBag }}</p>
+                        <p class="texts">{{ basic.badachPerlude }}</p>
+                        <ul>
+                            <li v-for="(check , index) in basic.badach" :key="index">{{ check }}</li>
+                        </ul>
                         <div class="video-in-acc">
                             <iframe
                                 src="https://player.vimeo.com/video/1057904310?h=19ad4cbaff"
@@ -27,12 +30,14 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        דגשי בטיחות, המראה + נחיתה
+                        דגשי בטיחות בהמראה + נחיתה
                     </button>
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p class="texts">{{ basic.madchefim }}</p>
+                        <ul>
+                            <li v-for="(point , index) in basic.safety" :key="index">{{ point }}</li>
+                        </ul>
                         <div class="video-in-acc">
                             <iframe
                                 src="https://player.vimeo.com/video/1057904350?h=3de53339c4"
