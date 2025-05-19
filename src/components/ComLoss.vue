@@ -14,12 +14,12 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        שיבוש
+                        שיבוש (Spoofing)
                     </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p class="texts"></p>
+                        <p class="texts">{{ loss.spoofing }}</p>
                         
                     </div>
                     </div>
@@ -32,7 +32,7 @@
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p class="texts"></p>
+                        <p class="texts">{{ loss.jamming }}</p>
                     </div>
                     </div>
                 </div>
@@ -48,7 +48,10 @@
                     </h2>
                     <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p class="texts"></p>
+                        <p class="texts">{{ loss.klitaOlaDef }}</p>
+                        <ul>
+                            <li v-for="(item , index) in loss.twos" :key="index">{{ item }}</li>
+                        </ul>
                     </div>
                     </div>
                 </div>
@@ -60,7 +63,10 @@
                     </h2>
                     <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p class="texts"></p>
+                        <p class="texts">{{ loss.klitaYoredet }}</p>
+                        <ul>
+                            <li v-for="(item , index) in loss.twos" :key="index">{{ item }}</li>
+                        </ul>
                     </div>
                     </div>
                 </div>
@@ -72,7 +78,7 @@
                     </h2>
                     <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p class="texts"></p>
+                        <p class="texts">{{ loss.comBlock }}</p>
                     </div>
                     </div>
                 </div>

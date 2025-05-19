@@ -10,47 +10,56 @@
             <div class="carousel-inner">
                 <div class="carousel-item">
                     <div class="d-block w-100 item-card">
-                        <h1>5</h1>
+                        <h1>6</h1>
                         <h2>אודות</h2>
                         <img src="../assets/navs/about.png" class="icons"/>
                         <p>קרדיטים, משאבים ועוד.</p>
-                        <button class="btn btn-primary" style="background-color:#316b30 ; border-color:#2e632d" @click="toAbout">התחל</button>
+                        <button class="btn btn-primary" style="background-color:#316b30 ; border-color:#2e632d" @click="navigate('about')">התחל</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block w-100 item-card">
+                        <h1>5</h1>
+                        <h2>איבוד RC וGPS</h2>
+                        <img src="../assets/navs/lost.png" class="icons"/>
+                        <p>שיבושים, בעיות קליטה וחסימות</p>
+                        <button class="btn btn-primary" style="background-color:#f1ad15 ; border-color:#d8a021" @click="navigate('communication')">התחל</button>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="d-block w-100 item-card">
                         <h1>4</h1>
-                        <h2>איבוד RC וGPS</h2>
-                        <img src="../assets/navs/lost.png" class="icons"/>
-                        <p>שיבושים, בעיות קליטה וחסימות</p>
-                        <button class="btn btn-primary" style="background-color:#f1ad15 ; border-color:#d8a021" @click="toLoss">התחל</button>
+                        <h2>סוגי הטסה ותרגולות</h2>
+                        <img src="../assets/navs/advanced.png" class="icons"/>
+                        <p>מרובע, שמינייה, מעגל אינדיאני ועוד</p>
+                        <button class="btn btn-primary" style="background-color:#dab87c ; border-color:#d2b279" @click="navigate('advancedo')">התחל</button>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="d-block w-100 item-card">
                         <h1>3</h1>
-                        <h2>סוגי הטסה ותרגולות</h2>
-                        <img src="../assets/navs/advanced.png" class="icons"/>
-                        <p>מרובע, שמינייה, מעגל אינדיאני ועוד</p>
-                        <button class="btn btn-primary" style="background-color:#dab87c ; border-color:#d2b279" @click="toAdvanced">התחל</button>
+                        <h2>תיאום אווירי</h2>
+                        <img src="../assets/navs/coordination.png" class="icons"/>
+                        <p>נוהל קרב, יב"א ומרכז סנכרון, תשל"ס</p>
+                        <button class="btn btn-primary" style="background-color:#1b4559 ; border-color:#123242" @click="navigate('coordination')">התחל</button>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="d-block w-100 item-card">
                         <h1>2</h1>
-                        <h2>תיאום אווירי</h2>
-                        <img src="../assets/navs/coordination.png" class="icons"/>
-                        <p>נוהל קרב, יב"א ומרכז סנכרון, תשל"ס</p>
-                        <button class="btn btn-primary" style="background-color:#1b4559 ; border-color:#123242" @click="toCoordination">התחל</button>
+                        <h2>הכנות מקדימות</h2>
+                        <img src="../assets/navs/preperation.png" class="icons"/>
+                        <p>המראה, נחיתה, בדיקות.</p>
+                        <button class="btn btn-primary" style="background-color:#961f20 ; border-color:#6d1212" @click="navigate('preperations')">התחל</button>
                     </div>
                 </div>
                 <div class="carousel-item active">
                     <div class="d-block w-100 item-card">
                         <h1>1</h1>
-                        <h2>הכנות מקדימות</h2>
-                        <img src="../assets/navs/preperation.png" class="icons"/>
-                        <p>המראה, נחיתה, בדיקות.</p>
-                        <button class="btn btn-primary" style="background-color:#961f20 ; border-color:#6d1212" @click="toBasic">התחל</button>
+                        <h2>הגדרות ומושגים</h2>
+                        <img src="../assets/navs/defs.png" class="icons"/>
+                        <p>כלל ההגדרות והמושגים</p>
+                        <button class="btn btn-primary" style="background-color:#6471b3 ; border-color:#3b4780" @click="navigate('defenitions')">התחל</button>
                     </div>
                 </div>
     
@@ -69,26 +78,14 @@
 export default {
     name : 'home-screen',
     methods : {
-        toAbout() {
-            this.$emit("move-page" , "about");
-        },
-        toAdvanced() {
-            this.$emit("move-page" , "advanced");
-        },
-        toLoss() {
-            this.$emit("move-page" , "loss");
-        },
-        toBasic() {
-            this.$emit("move-page" , "basic");
-        },
-        toCoordination() {
-          this.$emit("move-page" , "coordination")
+        navigate(pageName){
+          this.$router.push('/teneHatasa/'+pageName);
         }
     }
 };
 </script>
 
-<style>
+<style scoped>
 @font-face {
   font-family: 'text-font';
   src: url('../assets/fonts/Fredoka-Regular.woff2') format("woff2");
@@ -161,10 +158,11 @@ export default {
     height:50vh;
     width:60vh;
     background-color: rgba(255,255,255,0.44);
-    
+    align-content: stretch;
     text-align: center;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 6%;
 }
 
@@ -174,13 +172,6 @@ export default {
     transform: translateY(50%);
 }
 
-h1{
-    font-size: smaller;
-}
-
-h2{
-    font-size: smaller;
-}
 
 .icons{
     height: 19vh;

@@ -12,19 +12,42 @@
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p class="texts"></p>
+                        <p class="texts">{{ coordination.nohalOpening }}</p>
+                        <ol>
+                            <li>{{ coordination.nohalList[0] }}</li>
+                            <li>{{ coordination.nohalList[1] }}</li>
+                            <li>{{ coordination.nohalList[2] }}</li>
+                            <li>{{ coordination.nohalList[3] }}
+                                <ul>
+                                    <li v-for="(item , index) in coordination.hamnach" :key="index">{{ item }}</li>
+                                </ul>
+                            </li>
+                            <li>{{ coordination.nohalList[4] }}</li>
+                            <li>{{ coordination.nohalList[5] }}</li>
+                            <li>{{ coordination.nohalList[6] }}</li>
+                            <li>{{ coordination.nohalList[7] }}</li>
+                        </ol>
                     </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        יב"א + מרכז סנכרון
+                        גופי תיאום אווירי
                     </button>
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p class="texts"></p>
+                        <p class="texts">{{ coordination.gufimOpening }}</p>
+                        <p>
+                            <span class="bold">יב"א - יחידת בקרה אווירית</span> - {{ coordination.yaba }}
+                        </p>
+                        <p>
+                            <span class="bold">מב"א</span> - {{ coordination.maba }}
+                        </p>
+                        <p>
+                            <span class="bold">מרכז סנכרון</span> - {{ coordination.merkaz }}
+                        </p>
                     </div>
                     </div>
                 </div>
@@ -36,7 +59,7 @@
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p class="texts"></p>
+                        <p class="texts">{{ coordination.tashlas }}</p>
                     </div>
                     </div>
                 </div>
@@ -62,7 +85,7 @@ export default {
 </script>
 
 <style scoped>
-font-face {
+@font-face {
   font-family: 'text-font';
   src: url('../assets/fonts/Fredoka-Regular.woff2') format("woff2");
 }
@@ -70,6 +93,11 @@ font-face {
 @font-face {
   font-family: 'title-font';
   src: url('../assets/fonts/rubik.woff2') format("woff2");
+}
+
+@font-face {
+  font-family: 'bold-font';
+  src: url('../assets/fonts/bold.ttf');
 }
 
 .air-coordination{
@@ -83,6 +111,11 @@ font-face {
     min-width: 100vw;
     overflow: hidden;
     font-family: 'text-font';
+}
+
+.bold{
+    font-weight: bolder;
+    font-family: 'bold-font';
 }
 
 .nav-item {

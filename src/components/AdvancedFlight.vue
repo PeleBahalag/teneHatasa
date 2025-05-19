@@ -19,7 +19,7 @@
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p class="texts">{{ advanced.indianCircle }}</p>
+                        <p class="texts">{{ advanced.square }}</p>
                         <!-- <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
                             <source src="" type="video/mp4">
                             הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
@@ -35,7 +35,7 @@
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p class="texts">{{ advanced.square }}</p>
+                        <p class="texts">{{ advanced.digitalEight }}</p>
                         <!-- <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
                             <source src="" type="video/mp4">
                             הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
@@ -51,7 +51,7 @@
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p class="texts">{{ advanced.digitalEight }}</p>
+                        <p class="texts">{{ advanced.indianCircle }}</p>
                         <!-- <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
                             <source src="" type="video/mp4">
                             הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
@@ -122,7 +122,7 @@
                     </h2>
                     <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p class="texts">{{ advanced.attiCircle}}</p>
+                        <p class="texts">{{ advanced.attiSquare}}</p>
                         <!-- <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
                             <source src="" type="video/mp4">
                             הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
@@ -138,7 +138,7 @@
                     </h2>
                     <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p class="texts">{{ advanced.attiSquare}}</p>
+                        <p class="texts">{{ advanced.attiEight}}</p>
                         <!-- <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
                             <source src="" type="video/mp4">
                             הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
@@ -154,7 +154,7 @@
                     </h2>
                     <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p class="texts">{{ advanced.attiEight }}</p>
+                        <p class="texts">{{ advanced.attiCircle }}</p>
                         <!-- <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
                             <source src="" type="video/mp4">
                             הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר

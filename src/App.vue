@@ -4,33 +4,28 @@
       <img src="./assets/pele.png" class="pele logo"/>
       <img src="./assets/chail.png" class="chail logo"/>
     </div>
-    <home-screen id="home-screen" v-if="currentPage === 'home'" @move-page="navigate"></home-screen>
-    <about-page v-if="currentPage === 'about'"></about-page>
-    <basic-protocols v-if="currentPage === 'basic'"></basic-protocols>
-    <advanced-flight v-if="currentPage === 'advanced'"></advanced-flight>
-    <com-loss v-if="currentPage === 'loss'"></com-loss>
-    <air-coordination v-if="currentPage === 'coordination'"></air-coordination>
-    <img v-if="currentPage !== 'home'" src="./assets/navs/home.png" class="home-btn" @click="navigate('home')"/>
+    <router-view></router-view>
+    <img v-if="notHome" src="./assets/navs/home.png" class="home-btn" @click="rth"/>
   </div>
 </template>
 
 <script>
-  import HomeScreen from './components/HomeScreen.vue'
-  import AboutPage from './components/AboutPage.vue';
-  import BasicProtocols from './components/BasicProtocols.vue';
-  import AdvancedFlight from './components/AdvancedFlight.vue';
-  import AirCoordination from './components/AirCoordination.vue';
-  import ComLoss from './components/ComLoss.vue';
+
   export default{
-    components:{"home-screen" : HomeScreen , "about-page" : AboutPage , "basic-protocols" : BasicProtocols , 'advanced-flight' : AdvancedFlight, ComLoss, AirCoordination},
     data() {
       return{
-        currentPage:'home',
+
+      }
+    },
+    computed : {
+      notHome(){
+        if(this.$route.path.includes('o')){return true}
+        else{return false}
       }
     },
     methods : {
-      navigate(pageName){
-        this.currentPage = pageName;
+      rth(){
+        this.$router.push('/teneHatasa')
       }
     }
   }
