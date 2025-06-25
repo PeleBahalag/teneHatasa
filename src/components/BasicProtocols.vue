@@ -18,7 +18,7 @@
                         </ul>
                         <div class="video-in-acc">
                             <iframe
-                                src="https://player.vimeo.com/video/1057904310?h=19ad4cbaff"
+                                src="https://drive.google.com/file/d/1_zq92NVSk1a2yICNqC5wGon3pi4QYOw3/preview"
                                 frameborder="0"
                                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                                 allowfullscreen
