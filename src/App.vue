@@ -1,10 +1,14 @@
 <template>
+  <!--the root comp of the project-->
   <div id="app">
+    <!--the banner-->
     <div class="banner">
       <img src="./assets/pele.png" class="pele logo"/>
       <img src="./assets/chail.png" class="chail logo"/>
     </div>
+    <!--here we inject the apropriate component-->
     <router-view></router-view>
+    <!--show home button for every page that isnt the homepage-->
     <img v-if="notHome" src="./assets/navs/home.png" class="home-btn" @click="rth"/>
   </div>
 </template>

@@ -1,7 +1,8 @@
 <template>
+    <!--this component contains the defenitions-->
     <div id="defs-comp">
         <h2 class="title">הכנות מקדימות</h2>
-
+        <!--the accordion is made with bootstrap so you can look at their docs if needed.-->
         <div class="subject">
             <div class="accordion accordion-flush">
                 <div class="accordion-item">
@@ -15,14 +16,6 @@
                         <ol>
                             <li v-for="(check , index) in defs.defs" :key="index">{{ check }}</li>
                         </ol>
-                        <!-- <div class="video-in-acc">
-                            <iframe
-                                src="https://player.vimeo.com/video/1057904310?h=19ad4cbaff"
-                                frameborder="0"
-                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-                                allowfullscreen
-                            ></iframe>
-                        </div> -->
                     </div>
                     </div>
                 </div>
@@ -37,19 +30,9 @@
                         <ul>
                             <li v-for="(cat , index) in defs.catergories" :key="index">{{ cat }}</li>
                         </ul>
-                        <!-- <div class="video-in-acc">
-                            <iframe
-                                src="https://player.vimeo.com/video/1057904350?h=3de53339c4"
-                                frameborder="0"
-                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-                                allowfullscreen
-                            ></iframe>
-                        </div> -->
                     </div>
                     </div>
                 </div>
-                
-                <!-- <div class="accordion-item"> <h2 class="accordion-header"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix"> חמשת הממים </button> </h2> <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"> <div class="accordion-body"> <p class="texts">{{ basic.fiveMemimPerlude }}</p> <ol> <li v-for="(item , index) in basic.fiveMemimList" :key="index">{{ item }}</li> </ol> <div class="video-in-acc"> <iframe src="https://player.vimeo.com/video/1057904479?h=05da8ed3cb" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen ></iframe> </div> </div> </div> </div> <div class="accordion-item"> <h2 class="accordion-header"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven"> תרגולת המראה </button> </h2> <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"> <div class="accordion-body"> <p class="texts">{{ basic.takeoff }}</p> <div class="video-in-acc"> <iframe src="https://player.vimeo.com/video/1057904588?h=b4bae8cb33" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen ></iframe> </div> </div> </div> </div> <div class="accordion-item"> <h2 class="accordion-header"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight"> נחיתה </button> </h2> <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"> <div class="accordion-body"> <p class="texts">{{ basic.landing }}</p> <div class="video-in-acc"> <iframe src="https://player.vimeo.com/video/1057904635?h=4bcff48898" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen ></iframe> </div> </div> </div> </div> <div class="accordion-item"> <h2 class="accordion-header"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine"> קיפול רחפן </button> </h2> <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"> <div class="accordion-body"> <p class="texts">{{ basic.fold }}</p> <div class="video-in-acc"> <iframe src="https://player.vimeo.com/video/1057904684?h=a01ef39abf" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen ></iframe> </div> </div> </div> </div> -->
                 
             </div>
         </div>
@@ -58,10 +41,12 @@
 </template>
 
 <script>
+//importing a json file that contains all the texts for this component
 import defs from "../assets/defs.json"
 export default {
     data(){
         return{
+            //returning it in data so the template knows about it.
             defs
         }
     }

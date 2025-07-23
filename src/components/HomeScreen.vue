@@ -1,4 +1,5 @@
 <template>
+    <!--this is the landing page with navigation to all pages-->
     <div id="home-screen">
         <h2 class="title">פקלון<span class="mobile-break"> </span> תרגולת טיסה</h2>
         <p class="message">
@@ -20,7 +21,7 @@
                 <div class="carousel-item">
                     <div class="d-block w-100 item-card">
                         <h1>5</h1>
-                        <h2>איבוד RC וGPS</h2>
+                        <h2>איבוד RF וGPS</h2>
                         <img src="../assets/navs/lost.png" class="icons"/>
                         <p>שיבושים, בעיות קליטה וחסימות</p>
                         <button class="btn btn-primary" style="background-color:#f1ad15 ; border-color:#d8a021" @click="navigate('communication')">התחל</button>

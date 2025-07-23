@@ -1,7 +1,8 @@
 <template>
+    <!--this component details the required prep for a flight-->
     <div class="basic-protocols">
         <h2 class="title">הכנות מקדימות</h2>
-
+        <!--the accordion is made with bootstrap so you can look at their docs if needed.-->
         <div class="subject">
             <div class="accordion accordion-flush">
                 <div class="accordion-item">
@@ -109,7 +110,6 @@
                     </div>
                     </div>
                 </div>
-                <!-- <div class="accordion-item"> <h2 class="accordion-header"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix"> חמשת הממים </button> </h2> <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"> <div class="accordion-body"> <p class="texts">{{ basic.fiveMemimPerlude }}</p> <ol> <li v-for="(item , index) in basic.fiveMemimList" :key="index">{{ item }}</li> </ol> <div class="video-in-acc"> <iframe src="https://player.vimeo.com/video/1057904479?h=05da8ed3cb" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen ></iframe> </div> </div> </div> </div> <div class="accordion-item"> <h2 class="accordion-header"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven"> תרגולת המראה </button> </h2> <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"> <div class="accordion-body"> <p class="texts">{{ basic.takeoff }}</p> <div class="video-in-acc"> <iframe src="https://player.vimeo.com/video/1057904588?h=b4bae8cb33" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen ></iframe> </div> </div> </div> </div> <div class="accordion-item"> <h2 class="accordion-header"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight"> נחיתה </button> </h2> <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"> <div class="accordion-body"> <p class="texts">{{ basic.landing }}</p> <div class="video-in-acc"> <iframe src="https://player.vimeo.com/video/1057904635?h=4bcff48898" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen ></iframe> </div> </div> </div> </div> <div class="accordion-item"> <h2 class="accordion-header"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine"> קיפול רחפן </button> </h2> <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"> <div class="accordion-body"> <p class="texts">{{ basic.fold }}</p> <div class="video-in-acc"> <iframe src="https://player.vimeo.com/video/1057904684?h=a01ef39abf" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen ></iframe> </div> </div> </div> </div> -->
                 
             </div>
         </div>
@@ -118,7 +118,7 @@
 </template>
 
 <script>
-import { onMounted, ref } from "vue";
+//importing a json file
 import basic from "/src/assets/basic.json"
 
 export default {
@@ -128,6 +128,8 @@ export default {
             basic
         }
     },
+    //this method handles the change when the user watches the video on fullscreen
+    //if im being honest i totally copied this one from chat gpt so i dont really understand what it does
     methods : {
 
         handleFullscreen() {

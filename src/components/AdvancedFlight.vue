@@ -1,6 +1,8 @@
 <template>
+    <!--this component contains instructions for advanced flight shapes/exercises.-->
     <div id="advanced-flight">
         <h2 class="title">הטסה מתקדמת</h2>
+        <!--a simple switch that allows the user to choose modes-->
         <div class="switch-container">
             <span style="margin: 3px;">GPS/VPS</span>
             <label class="switch">
@@ -9,6 +11,7 @@
             </label>
             <span style="margin: 3px;">ATTI</span>
         </div>
+        <!--just like in the communication loss component one section will show for each mode-->
         <div class="subject" v-show="isGps">
             <div class="accordion accordion-flush">
                 <div class="accordion-item">

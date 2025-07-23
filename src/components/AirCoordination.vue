@@ -1,7 +1,8 @@
 <template>
+    <!--this comp details who's approval is needed before a flight.-->
     <div class="air-coordination">
         <h2 class="title">תיאום אווירי</h2>
-
+        <!--the accordion is made with bootstrap so you can look at their docs if needed.-->
         <div class="subject">
             <div class="accordion accordion-flush">
                 <div class="accordion-item">
@@ -73,6 +74,7 @@
 </template>
 
 <script>
+//importing a json file
 import coordination from "../assets/coordination.json"
 export default {
     name : 'air-coordination',

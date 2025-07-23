@@ -1,4 +1,6 @@
 <template>
+  <!--this is the credits comp! if you end up making changes to the code 
+    feel free to add your name to the credit list in the json file.-->
     <div id="about-page">
         <h2 class="title">אודות</h2>
         <div class="text-container">

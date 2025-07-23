@@ -1,14 +1,18 @@
 <template>
+    <!--this comp details what to do in the case of communication/signal loss-->
     <div id="com-loss">
         <h2 class="title">איבוד RC וGPS</h2>
+        <!--a simple switch that allows the user to choose modes-->
         <div class="switch-container">
             <span style="margin: 3px;">GPS</span>
             <label class="switch">
             <input type="checkbox" v-model="isGps" />
             <span class="slider"></span>
             </label>
-            <span style="margin: 3px;">RC</span>
+            <span style="margin: 3px;">RF</span>
         </div>
+        <!--the accordion is made with bootstrap so you can look at their docs if needed.-->
+        <!--this section will appear when gps is chosen-->
         <div class="subject" v-show="isGps">
             <div class="accordion accordion-flush">
                 <div class="accordion-item">
@@ -38,6 +42,7 @@
                 </div>
             </div>
         </div>
+        <!--this section will be shown otherwise-->
         <div class="subject" v-show="!isGps">
             <div class="accordion accordion-flush">
                 <div class="accordion-item">
@@ -89,6 +94,7 @@
 </template>
 
 <script>
+//importing the json file
 import loss from "../assets/loss.json"
 export default {
     name: "com-loss",
