@@ -25,7 +25,7 @@
                         <p class="texts">{{ advanced.square }}</p>
                         <div class="video-in-acc">
                             <iframe
-                                src="https://drive.google.com/file/d/18GjEVIQV8McJqNfP5W9Tmy9vS3sZCszi/preview"
+                                src="https://www.youtube.com/embed/aUwjA-i6xHI?si=8dZOWNkvKTnaFvFk"
                                 frameborder="0"
                                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                                 allowfullscreen
@@ -45,7 +45,7 @@
                         <p class="texts">{{ advanced.digitalEight }}</p>
                         <div class="video-in-acc">
                             <iframe
-                                src="https://drive.google.com/file/d/1pRjELZjMmyMAS-QhvkIpd1miQL1L6jJ9/preview"
+                                src="https://www.youtube.com/embed/n0w1NU3y3P8?si=ByeTkABgsVHKwmOW"
                                 frameborder="0"
                                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                                 allowfullscreen
@@ -65,7 +65,7 @@
                         <p class="texts">{{ advanced.indianCircle }}</p>
                         <div class="video-in-acc">
                             <iframe
-                                src="https://drive.google.com/file/d/1Qcsb32z3y2EoMMT8dXNsd-dt20M6_RPf/preview"
+                                src="https://www.youtube.com/embed/Bi39U7XBKEA?si=vVlbmb-Woel5Nr0M"
                                 frameborder="0"
                                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                                 allowfullscreen
@@ -140,7 +140,7 @@
                         <p class="texts">{{ advanced.attiSquare}}</p>
                         <div class="video-in-acc">
                             <iframe
-                                src="https://drive.google.com/file/d/18GjEVIQV8McJqNfP5W9Tmy9vS3sZCszi/preview"
+                                src="https://www.youtube.com/embed/aUwjA-i6xHI?si=8dZOWNkvKTnaFvFk"
                                 frameborder="0"
                                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                                 allowfullscreen
@@ -160,7 +160,7 @@
                         <p class="texts">{{ advanced.attiEight}}</p>
                         <div class="video-in-acc">
                             <iframe
-                                src="https://drive.google.com/file/d/1pRjELZjMmyMAS-QhvkIpd1miQL1L6jJ9/preview"
+                                src="https://www.youtube.com/embed/n0w1NU3y3P8?si=ByeTkABgsVHKwmOW"
                                 frameborder="0"
                                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                                 allowfullscreen
@@ -180,7 +180,7 @@
                         <p class="texts">{{ advanced.attiCircle }}</p>
                         <div class="video-in-acc">
                             <iframe
-                                src="https://drive.google.com/file/d/1Qcsb32z3y2EoMMT8dXNsd-dt20M6_RPf/preview"
+                                src="https://www.youtube.com/embed/Bi39U7XBKEA?si=vVlbmb-Woel5Nr0M"
                                 frameborder="0"
                                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                                 allowfullscreen

@@ -19,7 +19,7 @@
                         </ul>
                         <div class="video-in-acc">
                             <iframe
-                                src="https://drive.google.com/file/d/1_zq92NVSk1a2yICNqC5wGon3pi4QYOw3/preview"
+                                src="https://www.youtube.com/embed/X00mKDTrktU?si=tj3S9bFFI_JlGaeb"
                                 frameborder="0"
                                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                                 allowfullscreen
@@ -41,7 +41,7 @@
                         </ul>
                         <div class="video-in-acc">
                             <iframe
-                                src="https://drive.google.com/file/d/1uqec7tZT32JqPrjnybwEDps3o7K3_90N/preview"
+                                src="https://www.youtube.com/embed/nOS15U5JbE4?si=ZkpWi6tkLGs5btpc"
                                 frameborder="0"
                                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                                 allowfullscreen
@@ -61,7 +61,7 @@
                         <p class="texts">{{ basic.badam }}</p>
                         <div class="video-in-acc">
                             <iframe
-                                src="https://drive.google.com/file/d/1PyDQ5wotAhDlLbl5BYPYh6QO-66LXWqA/preview"
+                                src="https://www.youtube.com/embed/wunVd9UViHk?si=6ZCLHbq1Cp4c4pnB"
                                 frameborder="0"
                                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                                 allowfullscreen
@@ -81,7 +81,7 @@
                         <p class="texts">{{basic.app}}</p>
                         <div class="video-in-acc">
                             <iframe
-                                src="https://drive.google.com/file/d/1E27Pqvrk0HjlHhVjKDTh7m3DiyRKp30m/preview"
+                                src="https://www.youtube.com/embed/I-w9yGLvlcg?si=1Z8cLJSkVJkSuld_"
                                 frameborder="0"
                                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                                 allowfullscreen
@@ -101,7 +101,7 @@
                         <p class="texts">{{ basic.compassCaliberate }}</p>
                         <div class="video-in-acc">
                             <iframe
-                                src="https://drive.google.com/file/d/1wN5XDcqgAPOUmbxMR5wlFaafF5iXqAi4/preview"
+                                src="https://www.youtube.com/embed/6T_ftGFAiUg?si=mSdZD_yD4-jketfo"
                                 frameborder="0"
                                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                                 allowfullscreen
