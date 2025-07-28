@@ -86,10 +86,6 @@
                         <ol>
                             <li v-for="(item , index) in advanced.disorientationList" :key="index">{{ item }}</li>
                         </ol>
-                        <!-- <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
-                            <source src="" type="video/mp4">
-                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
-                        </video> -->
                     </div>
                     </div>
                 </div>
@@ -106,10 +102,6 @@
                     <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                         <p class="texts">{{ advanced.attiFixed }}</p>
-                        <!-- <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
-                            <source src="" type="video/mp4">
-                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
-                        </video> -->
                     </div>
                     </div>
                 </div>
@@ -121,11 +113,6 @@
                     </h2>
                     <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p class="texts">{{ advanced.attiBallerina }}</p>
-                        <!-- <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
-                            <source src="" type="video/mp4">
-                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
-                        </video> -->
                     </div>
                     </div>
                 </div>
@@ -201,10 +188,6 @@
                         <ol>
                             <li v-for="(item , index) in advanced.attiDisorientationList" :key="index">{{ item }}</li>
                         </ol>
-                        <!-- <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
-                            <source src="" type="video/mp4">
-                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
-                        </video> -->
                     </div>
                     </div>
                 </div>
@@ -313,7 +296,6 @@ export default {
 .next{
     position: absolute;
     left:3%;
-    
 }
 
 .teasers{
@@ -352,8 +334,7 @@ export default {
 }
 
 .accordion-button{
-    background-color: #dab87c;
-    
+    background-color: #dab87c;   
 }
 
 .accordion-button::after {

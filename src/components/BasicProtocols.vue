@@ -232,6 +232,10 @@ export default {
     font-size: 3vmin;
 }
 
+.li{
+    text-align: right;
+}
+
 .tprev{
     right:2%
 }
