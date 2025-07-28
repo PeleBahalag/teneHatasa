@@ -23,10 +23,14 @@
                     <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                         <p class="texts">{{ advanced.square }}</p>
-                        <!-- <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
-                            <source src="" type="video/mp4">
-                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
-                        </video> -->
+                        <div class="video-in-acc">
+                            <iframe
+                                src="https://drive.google.com/file/d/18GjEVIQV8McJqNfP5W9Tmy9vS3sZCszi/preview"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
                     </div>
                     </div>
                 </div>
@@ -39,10 +43,14 @@
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                         <p class="texts">{{ advanced.digitalEight }}</p>
-                        <!-- <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
-                            <source src="" type="video/mp4">
-                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
-                        </video> -->
+                        <div class="video-in-acc">
+                            <iframe
+                                src="https://drive.google.com/file/d/1pRjELZjMmyMAS-QhvkIpd1miQL1L6jJ9/preview"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
                     </div>
                     </div>
                 </div>
@@ -55,10 +63,14 @@
                     <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                         <p class="texts">{{ advanced.indianCircle }}</p>
-                        <!-- <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
-                            <source src="" type="video/mp4">
-                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
-                        </video> -->
+                        <div class="video-in-acc">
+                            <iframe
+                                src="https://drive.google.com/file/d/1Qcsb32z3y2EoMMT8dXNsd-dt20M6_RPf/preview"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
                     </div>
                     </div>
                 </div>
@@ -126,10 +138,14 @@
                     <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                         <p class="texts">{{ advanced.attiSquare}}</p>
-                        <!-- <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
-                            <source src="" type="video/mp4">
-                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
-                        </video> -->
+                        <div class="video-in-acc">
+                            <iframe
+                                src="https://drive.google.com/file/d/18GjEVIQV8McJqNfP5W9Tmy9vS3sZCszi/preview"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
                     </div>
                     </div>
                 </div>
@@ -142,10 +158,14 @@
                     <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                         <p class="texts">{{ advanced.attiEight}}</p>
-                        <!-- <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
-                            <source src="" type="video/mp4">
-                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
-                        </video> -->
+                        <div class="video-in-acc">
+                            <iframe
+                                src="https://drive.google.com/file/d/1pRjELZjMmyMAS-QhvkIpd1miQL1L6jJ9/preview"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
                     </div>
                     </div>
                 </div>
@@ -158,10 +178,14 @@
                     <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                         <p class="texts">{{ advanced.attiCircle }}</p>
-                        <!-- <video controls playsinline @fullscreenchange="handleFullscreen" class="video-in-acc">
-                            <source src="" type="video/mp4">
-                            הדפדפן שלכם לא תומך בסרטונים, נסו שנית מאוחר יותר
-                        </video> -->
+                        <div class="video-in-acc">
+                            <iframe
+                                src="https://drive.google.com/file/d/1Qcsb32z3y2EoMMT8dXNsd-dt20M6_RPf/preview"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
                     </div>
                     </div>
                 </div>

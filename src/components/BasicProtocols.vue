@@ -41,7 +41,7 @@
                         </ul>
                         <div class="video-in-acc">
                             <iframe
-                                src="https://player.vimeo.com/video/1057904350?h=3de53339c4"
+                                src="https://drive.google.com/file/d/1uqec7tZT32JqPrjnybwEDps3o7K3_90N/preview"
                                 frameborder="0"
                                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                                 allowfullscreen
@@ -61,7 +61,7 @@
                         <p class="texts">{{ basic.badam }}</p>
                         <div class="video-in-acc">
                             <iframe
-                                src="https://player.vimeo.com/video/1057904395?h=135bef5ce8"
+                                src="https://drive.google.com/file/d/1PyDQ5wotAhDlLbl5BYPYh6QO-66LXWqA/preview"
                                 frameborder="0"
                                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                                 allowfullscreen
@@ -81,7 +81,7 @@
                         <p class="texts">{{basic.app}}</p>
                         <div class="video-in-acc">
                             <iframe
-                                src="https://player.vimeo.com/video/1057904439?h=5ec7c2282b"
+                                src="https://drive.google.com/file/d/1E27Pqvrk0HjlHhVjKDTh7m3DiyRKp30m/preview"
                                 frameborder="0"
                                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                                 allowfullscreen
@@ -101,7 +101,7 @@
                         <p class="texts">{{ basic.compassCaliberate }}</p>
                         <div class="video-in-acc">
                             <iframe
-                                src="https://player.vimeo.com/video/1057904546?h=94fbb770d7"
+                                src="https://drive.google.com/file/d/1wN5XDcqgAPOUmbxMR5wlFaafF5iXqAi4/preview"
                                 frameborder="0"
                                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                                 allowfullscreen
