@@ -60,29 +60,34 @@ export default {
     right:50%;
     transform: translateX(50%);
     text-shadow: 3px 2px 1px rgba(211, 211, 211, 0.8);
+    z-index: 3;
 }
 
 .about-text{
     font-family:'text-font';
     font-size:4vmin;
+    line-height: 1 !important;
+    padding: none !important;
 }
 
 .text-container{
   width: 100%;
   position: absolute;
-  top:15%;
+  top:10%;
   height:70%;
   display: flex;
   flex-flow: column wrap;
   justify-content:center;
   padding-right: 3%;
   padding-left: 3% ;
+  line-height: 1 !important;
+  z-index: 1;
 }
 
 .lower-title{
   position: absolute;
     width:100%;
-    top:82%;
+    top:70%;
     text-align: center;
     font-family: 'title-font';
     font-size: 8vmin;

@@ -58,7 +58,7 @@
   top:0%;
   right:0%;
   background-image: url('assets/mejuraf.png');
-  z-index: 0;
+  z-index: 2;
 }
 
 .logo{

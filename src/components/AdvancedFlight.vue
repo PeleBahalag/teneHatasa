@@ -274,6 +274,7 @@ export default {
     right:51%;
     transform: translateX(50%);
     text-shadow: 3px 2px 1px rgba(211, 211, 211, 0.8);
+    z-index: 3;
 }
 
 .subtitle{

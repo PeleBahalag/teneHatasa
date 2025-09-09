@@ -108,6 +108,7 @@ export default {
   min-width: 100vw;
   overflow: hidden;
   font-family: 'text-font';
+  z-index: 3;
   
 }
 
@@ -121,6 +122,7 @@ export default {
     right:50%;
     transform: translateX(50%);
     text-shadow: 3px 2px 1px rgba(211, 211, 211, 0.8);
+    z-index: 3;
 }
 
 .mobile-break::after {
