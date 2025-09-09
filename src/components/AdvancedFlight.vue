@@ -373,7 +373,7 @@ export default {
   position: absolute;
   left:50%;
   transform: translateX(-48%);
-  top:12.5%;
+  top:12%;
 }
 
 .switch {

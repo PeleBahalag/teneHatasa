@@ -64,14 +64,14 @@ export default {
 
 .about-text{
     font-family:'text-font';
-    font-size:5vmin;
+    font-size:4vmin;
 }
 
 .text-container{
   width: 100%;
   position: absolute;
-  top:10%;
-  height:80%;
+  top:15%;
+  height:70%;
   display: flex;
   flex-flow: column wrap;
   justify-content:center;
@@ -82,7 +82,7 @@ export default {
 .lower-title{
   position: absolute;
     width:100%;
-    top:85%;
+    top:82%;
     text-align: center;
     font-family: 'title-font';
     font-size: 8vmin;
